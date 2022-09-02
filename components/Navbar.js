@@ -25,11 +25,11 @@ export const Navbar = () => {
   return (
     <div className="p-6 px-8 " >
       <div className="flex items-center justify-between h-22 ">
-        
+
         <Popover className="lg:hidden">
           {({ open }) => (
             <>
-              <Popover.Button className="">
+              <Popover.Button >
                 <IcomoonReact
                   iconSet={iconSet}
                   color="#b38e55"
@@ -39,9 +39,9 @@ export const Navbar = () => {
                 />
               </Popover.Button>
 
-              <Popover.Panel className="border absolute bg-white w-64 h-full ">
+              <Popover.Panel className=" absolute bg-white w-64 h-full ">
                 <div className="container divide-y-2 divide-paleGray divide-solid ">
-                  <div className="flex-row self-center border ">
+                  <div className="flex-row self-center  ">
                     <button className=" w-52 h-12 bg-gold text-white text-lg font-bold  ">
                       {" "}
                       تسجيل الدخول{" "}
