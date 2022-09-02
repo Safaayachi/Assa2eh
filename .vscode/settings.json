@@ -3,8 +3,8 @@
     "tailwindcss"
   ],
   "workbench.colorCustomizations": {
-    "activityBar.background": "#482227",
-    "titleBar.activeBackground": "#653036",
-    "titleBar.activeForeground": "#FCF9F9"
+    "activityBar.background": "#fce88d",
+    "titleBar.activeBackground": "#fce88d",
+    "titleBar.activeForeground": "#6b6969"
   }
 }

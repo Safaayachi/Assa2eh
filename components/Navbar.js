@@ -2,34 +2,45 @@ import { Popover } from "@headlessui/react";
 import IcomoonReact from "icomoon-react";
 import iconSet from "../public/selection.json";
 import { iconList } from "icomoon-react";
-
 import Image from "next/image";
 import Link from "next/link";
 
-const data = [
-  {
-    name: "الصفحة الرئيسية",
-    link: "/",
-  },
-  {
-    name: "الفنادق",
-    link: "/",
-  },
-  {
-    name: "اتصل بنا",
-    link: "/",
-  },
-];
-
 export const Navbar = () => {
   return (
-    <div className="p-6 px-8 " >
+    <div className="p-6  md:shadow-lg">
       <div className="flex items-center justify-between h-22 ">
-
-        <Popover className="lg:hidden">
+        <div className="hidden flex justify-between space-x-14 md:flex">
+          <button className="  w-40 h-12 bg-gold text-white text-lg font-bold   ">
+            {" "}
+            تسجيل الدخول{" "}
+          </button>
+        </div>
+        <div className="hidden space-x-10 md:flex ">
+          <Link href="/">
+            <a className="text-lg font-bold text-navyBlue hover:text-gold	">
+              اتصل بنا
+            </a>
+          </Link>
+          <Link href="/">
+            <a className="text-lg font-bold text-navyBlue hover:text-gold	">
+              الفنادق
+            </a>
+          </Link>
+          <Link href="/">
+            <a className="text-lg font-bold text-navyBlue hover:text-gold	">
+              حجز نقل
+            </a>
+          </Link>
+          <Link href="/">
+            <a className="text-lg font-bold text-navyBlue hover:text-gold	">
+              حجز فندق
+            </a>
+          </Link>
+        </div>
+        <Popover className="md:hidden">
           {({ open }) => (
             <>
-              <Popover.Button >
+              <Popover.Button>
                 <IcomoonReact
                   iconSet={iconSet}
                   color="#b38e55"
@@ -51,16 +62,27 @@ export const Navbar = () => {
                     </button>
                   </div>
                   <div className="flex-row ">
-                    {data.map((item, i) => (
-                      <div key={i}>
-                        <a
-                          href="{item.link}"
-                          className="text-lg font-bold text-navyBlue hover:text-gold	"
-                        >
-                          {item.name}{" "}
-                        </a>
-                      </div>
-                    ))}
+                    <div>
+                    <Link href="/">
+                      <a className="text-lg font-bold text-navyBlue hover:text-gold	">
+                        الصفحة الرئيسية
+                      </a>
+                    </Link>
+                    </div>
+                    <div>
+                    <Link href="/">
+                      <a className="text-lg font-bold text-navyBlue hover:text-gold	">
+                        الفنادق
+                      </a>
+                    </Link>
+                    </div>
+                    <div>
+                    <Link href="/">
+                      <a className="text-lg font-bold text-navyBlue hover:text-gold	">
+                        اتصل بنا
+                      </a>
+                    </Link>
+                    </div>
                   </div>
                 </div>
               </Popover.Panel>
