@@ -55,7 +55,7 @@ export const Navbar = () => {
                       <div key={i}>
                         <a
                           href="{item.link}"
-                          className="text-bold text-navyBlue hover:text-gold	"
+                          className="text-lg font-bold text-navyBlue hover:text-gold	"
                         >
                           {item.name}{" "}
                         </a>
