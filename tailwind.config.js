@@ -5,7 +5,11 @@ module.exports = {
   "./components/**/*.{js,ts,jsx,tsx}",
 ],
   theme: {
-    extend: {},
+    extend: {
+      container: {
+        center: true,
+      },
+    },
     colors:{
       gold:'#b38e55',
       paleGray:'#f7f7f7',
@@ -13,7 +17,8 @@ module.exports = {
       gray:'#e7e9ec',
       green:'#00800a',
       yellow:'#f6b12d',
-      red:'#d11317'
+      red:'#d11317',
+      white:'#ffffff',
     },
   },
   plugins: [],
