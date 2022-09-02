@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <div className="p-6  md:shadow-lg">
+    <div className="p-6 px-16  md:shadow-lg">
       <div className="flex items-center justify-between h-22 ">
         <div className="hidden flex justify-between space-x-14 md:flex">
           <button className="  w-40 h-12 bg-gold text-white text-lg font-bold   ">
