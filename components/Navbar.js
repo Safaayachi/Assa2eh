@@ -18,28 +18,28 @@ export const Navbar = () => {
         <ul className=" hidden md:flex space-x-14 self-end ">
           <li className="flex list-none h-16 ">
             <Link href="/">
-              <a className="active:text-gold active:border-b-4 border-gold inline-block text-2xl font-medium text-navyBlue hover:text-gold leading-loose">
+              <a className="active:text-gold active:border-b-4 border-gold  text-xl font-bold text-navyBlue hover:text-gold leading-loose">
                 اتصل بنا
               </a>
             </Link>
           </li>
           <li className="flex list-none ">
             <Link href="/">
-              <a className="active:text-gold active:border-b-4 border-gold inline-block text-2xl font-medium text-navyBlue hover:text-gold leading-loose">
+              <a className="active:text-gold active:border-b-4 border-gold  text-xl font-bold text-navyBlue hover:text-gold leading-loose">
                 الفنادق
               </a>
             </Link>
           </li>
           <li className="flex list-none">
             <Link href="/">
-              <a className="active:text-gold active:border-b-4 border-gold inline-block text-2xl font-medium text-navyBlue hover:text-gold leading-loose">
+              <a className="active:text-gold active:border-b-4 border-gold  text-xl font-bold text-navyBlue hover:text-gold leading-loose">
                 حجز نقل
               </a>
             </Link>
           </li>
           <li className="flex list-none">
             <Link href="/">
-              <a className="active:text-gold active:border-b-4 border-gold inline-block text-2xl font-medium leading-loose	 text-navyBlue hover:text-gold">
+              <a className="active:text-gold active:border-b-4 border-gold  text-xl font-bold leading-loose	 text-navyBlue hover:text-gold">
                 حجز فندق
               </a>
             </Link>
