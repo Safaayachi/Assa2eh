@@ -15,29 +15,29 @@ export const Navbar = () => {
             تسجيل الدخول
           </button>
         </div>
-        <ul className=" hidden md:flex space-x-14 self-end">
-          <li className="list-none">
+        <ul className=" hidden md:flex space-x-14 self-end ">
+          <li className="flex list-none h-20 ">
             <Link href="/">
               <a className="active:text-gold active:border-b-4 border-gold inline-block text-2xl font-medium text-navyBlue hover:text-gold leading-loose">
                 اتصل بنا
               </a>
             </Link>
           </li>
-          <li className="list-none ">
+          <li className="flex list-none ">
             <Link href="/">
               <a className="active:text-gold active:border-b-4 border-gold inline-block text-2xl font-medium text-navyBlue hover:text-gold leading-loose">
                 الفنادق
               </a>
             </Link>
           </li>
-          <li className="list-none">
+          <li className="flex list-none">
             <Link href="/">
               <a className="active:text-gold active:border-b-4 border-gold inline-block text-2xl font-medium text-navyBlue hover:text-gold leading-loose">
                 حجز نقل
               </a>
             </Link>
           </li>
-          <li className="list-none">
+          <li className="flex list-none">
             <Link href="/">
               <a className="active:text-gold active:border-b-4 border-gold inline-block text-2xl font-medium leading-loose	 text-navyBlue hover:text-gold">
                 حجز فندق
@@ -100,7 +100,7 @@ export const Navbar = () => {
         <div >
           <Link href="/">
             <a>
-              <Logo className="text-8xl " />
+              <Logo className="text-9xl " />
             </a>
           </Link>
         </div>
