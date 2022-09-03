@@ -11,7 +11,7 @@ export const Navbar = () => {
     
       <div className=" flex justify-between items-center w-full px-16 md:shadow-lg  ">
         <div className="hidden flex justify-between space-x-14 md:flex">
-          <button className="w-40 h-12 bg-gold text-white text-xl font-medium leading-loose">
+          <button className="w-40 h-12 bg-gold text-white text-xl font-bold leading-loose">
             تسجيل الدخول
           </button>
         </div>
@@ -100,7 +100,7 @@ export const Navbar = () => {
         <div >
           <Link href="/">
             <a>
-              <Logo className="text-8xl " />
+              <Logo className="text-7xl " />
             </a>
           </Link>
         </div>
