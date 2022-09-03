@@ -100,7 +100,7 @@ export const Navbar = () => {
         <div >
           <Link href="/">
             <a>
-              <Logo className="text-7xl " />
+              <Logo className="text-8xl " />
             </a>
           </Link>
         </div>
