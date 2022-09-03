@@ -9,14 +9,14 @@ import Link from "next/link";
 export const Navbar = () => {
   return (
     
-      <div className=" flex justify-between items-center w-full px-16 md:shadow-lg h-18">
+      <div className=" flex justify-between items-center w-full px-16 md:shadow-lg  ">
         <div className="hidden flex justify-between space-x-14 md:flex">
           <button className="w-40 h-12 bg-gold text-white text-xl font-medium leading-loose">
             تسجيل الدخول
           </button>
         </div>
         <ul className=" hidden md:flex space-x-14 self-end ">
-          <li className="flex list-none h-20 ">
+          <li className="flex list-none h-16 ">
             <Link href="/">
               <a className="active:text-gold active:border-b-4 border-gold inline-block text-2xl font-medium text-navyBlue hover:text-gold leading-loose">
                 اتصل بنا
@@ -100,7 +100,7 @@ export const Navbar = () => {
         <div >
           <Link href="/">
             <a>
-              <Logo className="text-9xl " />
+              <Logo className="text-8xl " />
             </a>
           </Link>
         </div>
