@@ -7,37 +7,43 @@ import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <div className="p-6 px-16  md:shadow-lg">
-      <div className="flex items-center justify-between h-22 ">
-        <div className="hidden flex justify-between space-x-14 md:flex">
-          <button className="  w-40 h-12 bg-gold text-white text-lg font-bold   ">
-            {" "}
-            تسجيل الدخول{" "}
-          </button>
-        </div>
-        <div className="hidden space-x-10 md:flex ">
+    <div className=" flex h-28 w-full px-16 shadow-lg justify-between items-center">
+      <div className="hidden flex justify-between space-x-14 md:flex">
+        <button className="w-52 h-16 bg-gold text-white text-3xl font-medium leading-loose">
+          تسجيل الدخول
+        </button>
+      </div>
+      <ul className=" hidden md:flex space-x-16">
+        <li className="list-none">
           <Link href="/">
-            <a className="text-lg font-bold text-navyBlue hover:text-gold	">
+            <a className="active:text-gold active:border-b-4 border-gold inline-block text-3xl font-medium text-navyBlue hover:text-gold leading-loose">
               اتصل بنا
             </a>
           </Link>
+        </li>
+        <li className="list-none">
           <Link href="/">
-            <a className="text-lg font-bold text-navyBlue hover:text-gold	">
+            <a className="active:text-gold active:border-b-4 border-gold inline-block text-3xl font-medium text-navyBlue hover:text-gold leading-loose">
               الفنادق
             </a>
           </Link>
+        </li>
+        <li className="list-none">
           <Link href="/">
-            <a className="text-lg font-bold text-navyBlue hover:text-gold	">
+            <a className="active:text-gold active:border-b-4 border-gold inline-block text-3xl font-medium text-navyBlue hover:text-gold leading-loose">
               حجز نقل
             </a>
           </Link>
+        </li>
+        <li className="list-none">
           <Link href="/">
-            <a className="text-lg font-bold text-navyBlue hover:text-gold	">
+            <a className="active:text-gold active:border-b-4 border-gold inline-block text-3xl font-medium leading-loose	 text-navyBlue hover:text-gold">
               حجز فندق
             </a>
           </Link>
-        </div>
-        <Popover className="md:hidden">
+        </li>
+      </ul>
+      <Popover className="md:hidden">
           {({ open }) => (
             <>
               <Popover.Button>
@@ -63,25 +69,25 @@ export const Navbar = () => {
                   </div>
                   <div className="flex-row ">
                     <div>
-                    <Link href="/">
-                      <a className="text-lg font-bold text-navyBlue hover:text-gold	">
-                        الصفحة الرئيسية
-                      </a>
-                    </Link>
+                      <Link href="/">
+                        <a className="text-lg font-bold text-navyBlue hover:text-gold	">
+                          الصفحة الرئيسية
+                        </a>
+                      </Link>
                     </div>
                     <div>
-                    <Link href="/">
-                      <a className="text-lg font-bold text-navyBlue hover:text-gold	">
-                        الفنادق
-                      </a>
-                    </Link>
+                      <Link href="/">
+                        <a className="text-lg font-bold text-navyBlue hover:text-gold	">
+                          الفنادق
+                        </a>
+                      </Link>
                     </div>
                     <div>
-                    <Link href="/">
-                      <a className="text-lg font-bold text-navyBlue hover:text-gold	">
-                        اتصل بنا
-                      </a>
-                    </Link>
+                      <Link href="/">
+                        <a className="text-lg font-bold text-navyBlue hover:text-gold	">
+                          اتصل بنا
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -90,17 +96,11 @@ export const Navbar = () => {
           )}
         </Popover>
 
-        <Link href="/">
-          <a>
-            <Image
-              src="/../public/images/logo.png"
-              alt="logo"
-              width={120.555}
-              height={42}
-            />
-          </a>
-        </Link>
-      </div>
+      <Link href="/">
+        <a>
+        <Image src="/../public/images/logo.svg" height={30} width={30} alt="logo"/>
+        </a>
+      </Link>
     </div>
   );
 };
