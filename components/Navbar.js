@@ -3,48 +3,49 @@ import IcomoonReact from "icomoon-react";
 import iconSet from "../public/selection.json";
 import { iconList } from "icomoon-react";
 import Image from "next/image";
-import Logo from "../public/images/logo.svg"
+import Logo from "../public/images/logo.svg";
 import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <div className=" flex h-2 w-full px-16 shadow-lg justify-between items-center">
-      <div className="hidden flex justify-between space-x-14 md:flex">
-        <button className="w-40 h-12 bg-gold text-white text-xl font-medium leading-loose">
-          تسجيل الدخول
-        </button>
-      </div>
-      <ul className=" hidden md:flex space-x-16">
-        <li className="list-none">
-          <Link href="/">
-            <a className="active:text-gold active:border-b-4 border-gold inline-block text-xl font-medium text-navyBlue hover:text-gold leading-loose">
-              اتصل بنا
-            </a>
-          </Link>
-        </li>
-        <li className="list-none">
-          <Link href="/">
-            <a className="active:text-gold active:border-b-4 border-gold inline-block text-xl font-medium text-navyBlue hover:text-gold leading-loose">
-              الفنادق
-            </a>
-          </Link>
-        </li>
-        <li className="list-none">
-          <Link href="/">
-            <a className="active:text-gold active:border-b-4 border-gold inline-block text-xl font-medium text-navyBlue hover:text-gold leading-loose">
-              حجز نقل
-            </a>
-          </Link>
-        </li>
-        <li className="list-none">
-          <Link href="/">
-            <a className="active:text-gold active:border-b-4 border-gold inline-block text-xl font-medium leading-loose	 text-navyBlue hover:text-gold">
-              حجز فندق
-            </a>
-          </Link>
-        </li>
-      </ul>
-      <Popover className="md:hidden">
+    <div className="h-18 w-full px-16 shadow-lg ">
+      <div className=" flex  justify-between items-center">
+        <div className="hidden flex justify-between space-x-14 md:flex">
+          <button className="w-40 h-12 bg-gold text-white text-xl font-medium leading-loose">
+            تسجيل الدخول
+          </button>
+        </div>
+        <ul className=" hidden md:flex space-x-16">
+          <li className="list-none">
+            <Link href="/">
+              <a className="active:text-gold active:border-b-4 border-gold inline-block text-2xl font-medium text-navyBlue hover:text-gold leading-loose">
+                اتصل بنا
+              </a>
+            </Link>
+          </li>
+          <li className="list-none ">
+            <Link href="/">
+              <a className="active:text-gold active:border-b-4 border-gold inline-block text-2xl font-medium text-navyBlue hover:text-gold leading-loose">
+                الفنادق
+              </a>
+            </Link>
+          </li>
+          <li className="list-none">
+            <Link href="/">
+              <a className="active:text-gold active:border-b-4 border-gold inline-block text-2xl font-medium text-navyBlue hover:text-gold leading-loose">
+                حجز نقل
+              </a>
+            </Link>
+          </li>
+          <li className="list-none">
+            <Link href="/">
+              <a className="active:text-gold active:border-b-4 border-gold inline-block text-2xl font-medium leading-loose	 text-navyBlue hover:text-gold">
+                حجز فندق
+              </a>
+            </Link>
+          </li>
+        </ul>
+        <Popover className="md:hidden">
           {({ open }) => (
             <>
               <Popover.Button>
@@ -96,14 +97,14 @@ export const Navbar = () => {
             </>
           )}
         </Popover>
-<div>
-<Link href="/">
-        <a>
-        <Logo className="text-9xl"/>
-        </a>
-      </Link>
-</div>
-      
+        <div >
+          <Link href="/">
+            <a>
+              <Logo className="text-9xl " />
+            </a>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
