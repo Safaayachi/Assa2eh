@@ -3,11 +3,12 @@ import IcomoonReact from "icomoon-react";
 import iconSet from "../public/selection.json";
 import { iconList } from "icomoon-react";
 import Image from "next/image";
+import Logo from "../public/images/logo.svg"
 import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <div className=" flex h-24 w-full px-16 shadow-lg justify-between items-center">
+    <div className=" flex h-2 w-full px-16 shadow-lg justify-between items-center">
       <div className="hidden flex justify-between space-x-14 md:flex">
         <button className="w-40 h-12 bg-gold text-white text-xl font-medium leading-loose">
           تسجيل الدخول
@@ -95,12 +96,14 @@ export const Navbar = () => {
             </>
           )}
         </Popover>
-
-      <Link href="/">
+<div>
+<Link href="/">
         <a>
-        <Image src="/../public/images/logo.svg" height={30} width={30} alt="logo"/>
+        <Logo className="text-9xl"/>
         </a>
       </Link>
+</div>
+      
     </div>
   );
 };
