@@ -58,40 +58,7 @@ export const Navbar = () => {
             </Popover.Button>
 
             <Popover.Panel className=" absolute bg-white w-64 h-full ">
-              <div className="container divide-y-2 divide-paleGray divide-solid ">
-                <div className="flex-row self-center ">
-                  <button className=" w-52 h-12 bg-gold text-white text-lg font-bold  ">
-                    {" "}
-                    تسجيل الدخول{" "}
-                  </button>
-                  <button className=" w-52 h-12 text-gold bg-white text-lg font-bold ">
-                    إنشاء حساب{" "}
-                  </button>
-                </div>
-                <div className="flex-row ">
-                  <div>
-                    <Link href="/">
-                      <a className="text-lg font-bold text-navyBlue hover:text-gold	">
-                        الصفحة الرئيسية
-                      </a>
-                    </Link>
-                  </div>
-                  <div>
-                    <Link href="/">
-                      <a className="text-lg font-bold text-navyBlue hover:text-gold	">
-                        الفنادق
-                      </a>
-                    </Link>
-                  </div>
-                  <div>
-                    <Link href="/">
-                      <a className="text-lg font-bold text-navyBlue hover:text-gold	">
-                        اتصل بنا
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
+              
             </Popover.Panel>
           </>
         )}
