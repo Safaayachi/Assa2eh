@@ -6,6 +6,9 @@ module.exports = {
 ],
   theme: {
     extend: {
+      backgroundImage: {
+        'image-cover' : "url('/../public/images/landingPageCover.jpg')",
+      },
       fontFamily:{
         'icomoon':['icomoon'],
       },
