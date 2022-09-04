@@ -45,11 +45,11 @@ export const Navbar = () => {
       <div>
         <Link href="/">
           <a>
-            <div className="relative w-60 h-20">
+            <div className="relative w-40 h-20">
               <Image
                 src="/images/logo.svg"
                 layout="fill"
-                objectFit="cover"
+                
                 alt="logo"
               />
             </div>
