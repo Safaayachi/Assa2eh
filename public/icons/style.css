@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?bsuoj7');
+  src:  url('fonts/icomoon.eot?bsuoj7#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?bsuoj7') format('truetype'),
+    url('fonts/icomoon.woff?bsuoj7') format('woff'),
+    url('fonts/icomoon.svg?bsuoj7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-local_parking_black_24dp:before {
+  content: "\e94e";
+}
+.icon-uniE901:before {
+  content: "\e94f";
+}
+.icon-bed:before {
+  content: "\e950";
+}
+.icon-calendar_today_black_24dp2:before {
+  content: "\e951";
+}
+.icon-call_black_24dp2:before {
+  content: "\e952";
+}
+.icon-check_black_24dp:before {
+  content: "\e953";
+}
+.icon-check_circle_black_24dp:before {
+  content: "\e954";
+}
+.icon-check_circle_outline_black_24dp1:before {
+  content: "\e955";
+}
+.icon-chevron_left_black_24dp1:before {
+  content: "\e956";
+}
+.icon-chevron_right_black_24dp:before {
+  content: "\e957";
+}
+.icon-clear_black_24dp:before {
+  content: "\e958";
+}
+.icon-email_black_24dp-3:before {
+  content: "\e959";
+}
+.icon-expand_less_black_24dp1:before {
+  content: "\e95a";
+}
+.icon-person_black_24dp2:before {
+  content: "\e95b";
+}
+.icon-place_black_24dp1:before {
+  content: "\e95c";
+}
+.icon-remove_black_24dp1:before {
+  content: "\e95d";
+}
+.icon-room_service_black_24dp1:before {
+  content: "\e95e";
+}
+.icon-search_black_24dp1:before {
+  content: "\e95f";
+}
+.icon-shower_black_24dp:before {
+  content: "\e960";
+}
+.icon-star:before {
+  content: "\e961";
+}
+.icon-visibility_black_24dp1:before {
+  content: "\e962";
+}
+.icon-visibility_off_black_24dp1:before {
+  content: "\e963";
+}
+.icon-wifi_black_24dp1:before {
+  content: "\e964";
+}
+.icon-XMLID_95:before {
+  content: "\e965";
+}
+.icon-ac_unit_black_24dp1:before {
+  content: "\e966";
+}
+.icon-add_black_24dp1:before {
+  content: "\e967";
+}
+.icon-arrow_back_black_24dp1:before {
+  content: "\e968";
+}
+.icon-arrow_drop_down_black_24dp1:before {
+  content: "\e969";
+}
+.icon-balcony:before {
+  content: "\e96a";
+}
+.icon-expand_more_black_24dp1:before {
+  content: "\e96b";
+}
+.icon-favorite_black_24dp:before {
+  content: "\e96c";
+}
+.icon-filter_alt_black_24dp1:before {
+  content: "\e96d";
+}
+.icon-lock_black_24dp1:before {
+  content: "\e96e";
+}
+.icon-menu_black_24dp1:before {
+  content: "\e96f";
+}
+.icon-calendar_today_black_24dp1:before {
+  content: "\e970";
+}
+.icon-call_black_24dp1:before {
+  content: "\e971";
+}
+.icon-info_black_24dp1:before {
+  content: "\e972";
+}
+.icon-local_taxi_black_2_24dp:before {
+  content: "\e973";
+}
+.icon-mail_outline_black_24dp1:before {
+  content: "\e974";
+}
+.icon-miscellaneous_services_black_24dp1:before {
+  content: "\e975";
+}
+.icon-perm_identity_black_24dp:before {
+  content: "\e976";
+}
+.icon-person_black_24dp1:before {
+  content: "\e977";
+}
+.icon-route_black_24dp1:before {
+  content: "\e978";
+}

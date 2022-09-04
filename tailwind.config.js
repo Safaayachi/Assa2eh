@@ -10,7 +10,7 @@ module.exports = {
         'image-cover' : "url('/../public/images/landingPageCover.jpg')",
       },
       fontFamily:{
-        'icomoon':['icomoon'],
+        'cairo':['Cairo', "sans-serif"],
       },
       container: {
         center: true,
