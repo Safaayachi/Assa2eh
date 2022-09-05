@@ -55,7 +55,7 @@ const Header = () => {
       </nav>
       <section className="flex flex-col md:flex-row w-full h-152  ">
         <div className=" relative h-1/2 w-full md:w-1/2 md:h-full mg-0">
-          <Image src="/images/landingPageCover.jpg" height={512} width={600} alt="hero-cover" layout="fill"  objectFit="cover"/>
+          <Image src="/images/landingPageCover.jpg" alt="hero-cover" layout="fill"  objectFit="cover"/>
           
         </div>
         <div className="h-1/2 w-full md:w-1/2 md:h-full bg-basic ">
