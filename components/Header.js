@@ -53,7 +53,7 @@ const Header = () => {
           </Link>
         </div>
       </nav>
-      <section className="flex flex-col md:flex-row w-full h-200  ">
+      <section className="flex flex-col md:flex-row w-full h-160  ">
         <div className=" relative h-1/2 w-full md:w-1/2 md:h-full mg-0">
           <Image src="/images/landingPageCover.jpg" height={512} width={600} alt="hero-cover" layout="fill"  objectFit="cover"/>
           
