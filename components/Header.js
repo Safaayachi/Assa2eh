@@ -53,15 +53,15 @@ const Header = () => {
           </Link>
         </div>
       </nav>
-      <section className="flex flex-col md:flex-row w-full h-160  ">
+      <section className="flex flex-col md:flex-row w-full h-152  ">
         <div className=" relative h-1/2 w-full md:w-1/2 md:h-full mg-0">
           <Image src="/images/landingPageCover.jpg" height={512} width={600} alt="hero-cover" layout="fill"  objectFit="cover"/>
           
         </div>
         <div className="h-1/2 w-full md:w-1/2 md:h-full bg-basic ">
           <div className="hidden md:flex md:flex-col md:pr-28 md:pt-40 md:pl-2">
-          <h1 className="  text-secondary font-bold  md:text-8xl text-end  "><span className="text-primary">الاختلاف</span> نخدمكم </h1>
-          <h1 className="text-secondary font-bold md:text-8xl text-end ">باحتراف</h1>
+          <h1 className="  text-secondary font-bold  md:text-7xl text-end  "><span className="text-primary">الاختلاف</span> نخدمكم </h1>
+          <h1 className="text-secondary font-bold md:text-7xl text-end ">باحتراف</h1>
           </div>
         
         </div>
