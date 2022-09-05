@@ -12,19 +12,20 @@ module.exports = {
       fontFamily:{
         'cairo':['Cairo', "sans-serif"],
       },
-      container: {
-        center: true,
-      },
+      spacing: {
+        
+        '200':'50rem',
+      }
     },
     colors:{
-      gold:'#b38e55',
-      paleGray:'#f7f7f7',
-      navyBlue:'#132d46',
-      gray:'#e7e9ec',
-      green:'#00800a',
-      yellow:'#f6b12d',
-      red:'#d11317',
-      white:'#ffffff',
+      primary:'#b38e55',
+      basic:'#f7f7f7',
+      secondary:'#132d46',
+      shade:'#e7e9ec',
+      success:'#00800a',
+      warning:'#f6b12d',
+      danger:'#d11317',
+      tint:'#ffffff',
     },
   },
   plugins: [],
