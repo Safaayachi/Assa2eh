@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer>
       <div className="bg-secondary h-30">
-        <div className="container mx-auto divide-y-2 divide-primary">
-          <div className="flex justify-between items-center py-4 px-6">
+        <div className="container mx-auto divide-y-2 divide-primary md:px-8">
+          <div className="flex justify-between items-center py-4 ">
             <div>
               <ul className="flex  text-tint space-x-3">
                 <li>
