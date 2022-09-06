@@ -106,14 +106,14 @@ const Footer = () => {
             </div>
             <div className="flex-col justify-center md:hidden space-y-4">
               <div className="flex space-x-6 text-tint items-center justify-center">
-                <Link href="/">اتصل بنا</Link>
-                <Link href="/">سياسة الخصوصية</Link>
-                <Link href="/"> الشروط و الاحكام</Link>
-              </div>
-              <div className="flex space-x-6 text-tint items-center justify-center">
                 <Link href="/">المدونة</Link>
                 <Link href="/">ضمان الخدمة</Link>
                 <Link href="/">حول</Link>
+              </div>
+              <div className="flex space-x-6 text-tint items-center justify-center">
+                <Link href="/">اتصل بنا</Link>
+                <Link href="/">سياسة الخصوصية</Link>
+                <Link href="/"> الشروط و الاحكام</Link>
               </div>
             </div>
           </div>
