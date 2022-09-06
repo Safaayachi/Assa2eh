@@ -103,7 +103,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className=" md:flex md:space-x-6 text-tint md:justify-center md:items-center">
-                <div className="hidden md:flex">
+                <div className="hidden md:flex space-x-6">
                   <ul className=" md:flex space-x-6">
                     <li>
                       <Link href="/">اتصل بنا</Link>
