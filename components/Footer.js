@@ -13,30 +13,29 @@ const Footer = () => {
           objectFit="cover"
         />
         <div className="absolute w-full h-72 bg-secondary opacity-60"></div>
-        <div className="absolute p-16  flex-col justify-center items-center space-y-8">
-          <div>
-            <h1 className="text-2xl text-tint font-bold text-center">
-              اشترك فى قائمتنا البريدية
-            </h1>
-            <h2 className="text-lg text-tint text-center ">
-              افضل العروض فقط تصل إلى بريدك الالكتروني
-            </h2>
+          <div className="absolute p-14  flex-col justify-center items-center space-y-8">
+              <div>
+                <h1 className="text-2xl text-tint font-bold text-center">
+                  اشترك فى قائمتنا البريدية
+                </h1>
+                <h2 className="text-lg text-tint text-center ">
+                  افضل العروض فقط تصل إلى بريدك الالكتروني
+                </h2>
+              </div>
+              <div>
+                <form className="flex space-x-2 justify-center">
+                  <button className="h-12 w-1/3 bg-tint font-bold" type="submit">
+                    اشترك
+                  </button>
+                  <input
+                    className="bg-transparent border w-3/4 border-tint text-center p-2"
+                    type="email"
+                    name="mailbox"
+                    value="البريد الالكتروني"
+                  />
+                </form>
+              </div>
           </div>
-          <div>
-            <form className="flex space-x-2 justify-center">
-              <button className="h-12 w-16 bg-tint font-bold" type="submit">
-                اشترك
-              </button>
-              <input
-                className="bg-gray-50 border border-tint text-center p-2"
-                type="email"
-                name="mailbox"
-                value="البريد الالكتروني"
-
-              />
-            </form>
-          </div>
-        </div>
       </div>
       <div className="h-56 bg-secondary md:h-48">
         <div className=" container mx-auto divide-y-2 divide-primary md-px-8 space-y-4">
