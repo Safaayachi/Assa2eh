@@ -14,7 +14,7 @@ const Footer = () => {
                   <li>
                     <Link href="/">
                       <a>
-                        <div className="relative w-6 h-6 md:w-8 md:h-8">
+                        <div className="relative w-8 h-8 ">
                           <Image
                             src="/images/facebook.svg"
                             layout="fill"
@@ -28,7 +28,7 @@ const Footer = () => {
                   <li>
                     <Link href="/">
                       <a>
-                        <div className="relative w-6 h-6 md:w-8 md:h-8">
+                        <div className="relative w-8 h-8 ">
                           <Image
                             src="/images/twitter.svg"
                             layout="fill"
@@ -42,7 +42,7 @@ const Footer = () => {
                   <li>
                     <Link href="/">
                       <a>
-                        <div className="relative w-6 h-6 md:w-8 md:h-8">
+                        <div className="relative w-8 h-8 ">
                           <Image
                             src="/images/instagram.svg"
                             layout="fill"
@@ -56,7 +56,7 @@ const Footer = () => {
                   <li>
                     <Link href="/">
                       <a>
-                        <div className="relative w-6 h-6 md:w-8 md:h-8">
+                        <div className="relative w-8 h-8 ">
                           <Image
                             src="/images/Youtube.svg"
                             layout="fill"

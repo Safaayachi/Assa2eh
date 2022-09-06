@@ -33,7 +33,7 @@ const Header = () => {
             <>
               <Popover.Button>
                 <i
-                  className={`icon-menu_black_24dp1 text-primary  text-4xl ${
+                  className={`icon-menu_black_24dp1 text-primary  text-3xl ${
                     open ? "hidden" : "block"
                   }`}
                 />
