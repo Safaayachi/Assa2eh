@@ -28,10 +28,10 @@ const Footer = () => {
                     اشترك
                   </button>
                   <input
-                    className="bg-transparent border w-3/4 border-tint text-center p-2"
+                    className="bg-transparent border w-3/4 border-tint text-center p-2 focus:outline-none"
                     type="email"
                     name="mailbox"
-                    value="البريد الالكتروني"
+                    placeholder="البريد الالكتروني"
                   />
                 </form>
               </div>
