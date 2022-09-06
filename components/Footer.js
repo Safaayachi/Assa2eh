@@ -10,16 +10,16 @@ const Footer = () => {
           <div className="flex-col ">
             <div className="flex justify-between items-center py-4 ">
               <div>
-                <ul className="flex  text-tint space-x-3">
+                <ul className="flex  text-tint space-x-3 m-4">
                   <li>
                     <Link href="/">
                       <a>
-                        <div className="relative w-8 h-8">
+                        <div className="relative w-6 h-6 md:w-8 md:h-8">
                           <Image
                             src="/images/facebook.svg"
                             layout="fill"
                             objectFit="cover"
-                            alt="logo"
+                            alt="facebook"
                           />
                         </div>
                       </a>
@@ -28,12 +28,12 @@ const Footer = () => {
                   <li>
                     <Link href="/">
                       <a>
-                        <div className="relative w-8 h-8">
+                        <div className="relative w-6 h-6 md:w-8 md:h-8">
                           <Image
                             src="/images/twitter.svg"
                             layout="fill"
                             objectFit="cover"
-                            alt="logo"
+                            alt="twitter"
                           />
                         </div>
                       </a>
@@ -42,12 +42,12 @@ const Footer = () => {
                   <li>
                     <Link href="/">
                       <a>
-                        <div className="relative w-8 h-8">
+                        <div className="relative w-6 h-6 md:w-8 md:h-8">
                           <Image
                             src="/images/instagram.svg"
                             layout="fill"
                             objectFit="cover"
-                            alt="logo"
+                            alt="instagram"
                           />
                         </div>
                       </a>
@@ -56,12 +56,12 @@ const Footer = () => {
                   <li>
                     <Link href="/">
                       <a>
-                        <div className="relative w-8 h-8">
+                        <div className="relative w-6 h-6 md:w-8 md:h-8">
                           <Image
                             src="/images/Youtube.svg"
                             layout="fill"
                             objectFit="cover"
-                            alt="logo"
+                            alt="youtube"
                           />
                         </div>
                       </a>
