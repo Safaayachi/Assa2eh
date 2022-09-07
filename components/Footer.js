@@ -85,7 +85,7 @@ const Footer = () => {
                 <ul className=" md:flex space-x-6 ">
                   <Link href="/">المدونة</Link>
                   <Link href="/">ضمان الخدمة</Link>
-                  <Link href="/signUp">حول</Link>
+                  <Link href="/">حول</Link>
                 </ul>
               </div>
 
@@ -108,7 +108,7 @@ const Footer = () => {
             <div className="flex space-x-6 text-tint items-center justify-center">
               <Link href="/">المدونة</Link>
               <Link href="/">ضمان الخدمة</Link>
-              <Link href="/">حول</Link>
+              <Link href="/signUp">حول</Link>
             </div>
             <div className="flex space-x-6 text-tint items-center justify-center">
               <Link href="/">اتصل بنا</Link>
