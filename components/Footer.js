@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import signUp from "../pages/signUp";
 
 const Footer = () => {
   return (
@@ -84,7 +85,7 @@ const Footer = () => {
                 <ul className=" md:flex space-x-6 ">
                   <Link href="/">المدونة</Link>
                   <Link href="/">ضمان الخدمة</Link>
-                  <Link href="/">حول</Link>
+                  <Link href="/signUp">حول</Link>
                 </ul>
               </div>
 
