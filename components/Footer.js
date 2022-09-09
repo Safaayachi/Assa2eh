@@ -1,20 +1,20 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import signUp from "../pages/signUp";
+import signIn from "../pages/signIn";
 
 const Footer = () => {
   return (
     <footer className="h-56 bg-secondary md:h-48">
-      <div className=" container mx-auto divide-y-2 divide-primary md-px-8 space-y-4">
+      <div className=" md-px-8 container mx-auto space-y-4 divide-y-2 divide-primary">
         <div className="flex-col ">
-          <div className="flex justify-between items-center py-4 ">
+          <div className="flex items-center justify-between py-4 ">
             <div>
-              <ul className="flex  text-tint space-x-3 m-4">
+              <ul className="m-4  flex space-x-3 text-tint">
                 <li>
                   <Link href="/">
                     <a>
-                      <div className="relative w-8 h-8 ">
+                      <div className="relative h-8 w-8 ">
                         <Image
                           src="/images/facebook.svg"
                           layout="fill"
@@ -28,7 +28,7 @@ const Footer = () => {
                 <li>
                   <Link href="/">
                     <a>
-                      <div className="relative w-8 h-8 ">
+                      <div className="relative h-8 w-8 ">
                         <Image
                           src="/images/twitter.svg"
                           layout="fill"
@@ -42,7 +42,7 @@ const Footer = () => {
                 <li>
                   <Link href="/">
                     <a>
-                      <div className="relative w-8 h-8 ">
+                      <div className="relative h-8 w-8 ">
                         <Image
                           src="/images/instagram.svg"
                           layout="fill"
@@ -56,7 +56,7 @@ const Footer = () => {
                 <li>
                   <Link href="/">
                     <a>
-                      <div className="relative w-8 h-8 ">
+                      <div className="relative h-8 w-8 ">
                         <Image
                           src="/images/Youtube.svg"
                           layout="fill"
@@ -69,9 +69,9 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className=" md:flex md:space-x-6 text-tint md:justify-center md:items-center">
-              <div className="hidden md:flex space-x-6">
-                <ul className=" md:flex space-x-6">
+            <div className=" text-tint md:flex md:items-center md:justify-center md:space-x-6">
+              <div className="hidden space-x-6 md:flex">
+                <ul className=" space-x-6 md:flex">
                   <li>
                     <Link href="/">اتصل بنا</Link>
                   </li>
@@ -82,7 +82,7 @@ const Footer = () => {
                     <Link href="/"> الشروط و الاحكام</Link>
                   </li>
                 </ul>
-                <ul className=" md:flex space-x-6 ">
+                <ul className=" space-x-6 md:flex ">
                   <Link href="/">المدونة</Link>
                   <Link href="/">ضمان الخدمة</Link>
                   <Link href="/">حول</Link>
@@ -92,7 +92,7 @@ const Footer = () => {
               <div>
                 <Link href="/">
                   <a>
-                    <div className="relative w-40 h-16">
+                    <div className="relative h-16 w-40">
                       <Image
                         src="/images/logoMobile.svg"
                         layout="fill"
@@ -104,20 +104,20 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col justify-center md:hidden space-y-4">
-            <div className="flex space-x-6 text-tint items-center justify-center">
+          <div className="flex-col justify-center space-y-4 md:hidden">
+            <div className="flex items-center justify-center space-x-6 text-tint">
               <Link href="/">المدونة</Link>
               <Link href="/">ضمان الخدمة</Link>
-              <Link href="/signUp">حول</Link>
+              <Link href="/signIn">حول</Link>
             </div>
-            <div className="flex space-x-6 text-tint items-center justify-center">
+            <div className="flex items-center justify-center space-x-6 text-tint">
               <Link href="/">اتصل بنا</Link>
               <Link href="/">سياسة الخصوصية</Link>
               <Link href="/"> الشروط و الاحكام</Link>
             </div>
           </div>
         </div>
-        <div className="text-center text-tint py-2">
+        <div className="py-2 text-center text-tint">
           <h3>booking saudi &copy; 2021</h3>
         </div>
       </div>

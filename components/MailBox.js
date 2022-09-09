@@ -10,19 +10,19 @@ const MailBox = () => {
         layout="fill"
         objectFit="cover"
       />
-      <div className="absolute w-full h-72 bg-secondary opacity-60 md:w-1/2 md:h-96"></div>
+      <div className="absolute h-72 w-full bg-secondary opacity-60 md:h-96 md:w-1/2"></div>
 
-      <div className="absolute p-14  flex-col justify-center items-center  space-y-8 md:py-24 md:px-36">
+      <div className="absolute flex-col  items-center justify-center space-y-8  p-14 md:py-24 md:px-36">
         <div>
-          <h1 className="text-2xl text-tint font-bold text-center">
+          <h1 className="text-center text-2xl font-bold text-tint">
             اشترك فى قائمتنا البريدية
           </h1>
-          <h2 className="text-lg text-tint text-center ">
+          <h2 className="text-center text-lg text-tint ">
             افضل العروض فقط تصل إلى بريدك الالكتروني
           </h2>
         </div>
         <div>
-          <form className="flex space-x-2 justify-center">
+          <form className="flex justify-center space-x-2">
             <button
               className="h-12 w-1/3 bg-tint font-bold md:h-16"
               type="submit"
@@ -30,7 +30,7 @@ const MailBox = () => {
               اشترك
             </button>
             <input
-              className="bg-transparent border h-12 w-3/4 border-tint text-center p-2 focus:outline-none md:w-96 md:h-16"
+              className="bg-transparent h-12 w-3/4 border border-tint p-2 text-center focus:outline-none md:h-16 md:w-96"
               type="email"
               name="mailbox"
               placeholder="البريد الالكتروني"
