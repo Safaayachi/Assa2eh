@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const MailBox = () => {
   return (
-    <div className="relative h-72 w-full md:h-96">
+    <div className="relative h-72 w-full md:h-96 flex justify-center items-center md:justify-end ">
       <Image
         src="/images/footerCover.jpg"
         alt="hero-cover"
