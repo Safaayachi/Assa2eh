@@ -11,7 +11,7 @@ const SignInForm = () => {
         <div className="mt-1 mb-6 flex w-full space-x-32">
           <Link href="/">
             <i
-              className={`icon-clear_black_24dp hidden text-2xl leading-3 text-secondary md:flex	`}
+              className={`icon-clear_black_24dp hidden cursor-pointer text-2xl leading-3 text-secondary md:flex	`}
             />
           </Link>
           <h1 className="w-full px-4 text-right text-2xl font-bold text-secondary">
@@ -44,7 +44,7 @@ const SignInForm = () => {
           </div>
           <div className="flex w-full justify-center space-x-24">
             <Link href="/">
-              <p className="text-xs font-bold text-secondary">
+              <p className="cursor-pointer text-xs font-bold text-secondary">
                 هل نسيت كلمة المرور؟
               </p>
             </Link>

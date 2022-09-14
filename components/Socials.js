@@ -1,53 +1,54 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Socials = () => {
   return (
     <div>
-        <div className="flex justify-center items-center w-full h-10 border space-x-2">
-        <div className="relative h-6 w-6">
-          <Link href="/">
+      <Link href="/">
+        <div className="flex h-10 w-full cursor-pointer items-center justify-center space-x-2 border">
+          <div className="relative h-6 w-6 ">
             <Image
               src="/images/google.svg"
               layout="fill"
               objectFit="cover"
               alt="google-signup"
             />
-          </Link>
+          </div>
+          <p className="text-xs font-bold">Google</p>
         </div>
-        <p className="text-xs font-bold">Google</p>
-      </div>
-      <div className="flex space-x-4 mt-4">
-        <div className="flex justify-center items-center w-1/2 h-10 border space-x-2">
-          <div className="relative h-6 w-5">
-            <Link href="/">
+      </Link>
+      <div className="mt-4 flex space-x-4">
+        <Link href="/">
+          <div className="flex h-10 w-1/2 cursor-pointer items-center justify-center space-x-2 border">
+            <div className="relative h-6 w-5">
               <Image
                 src="/images/apple.svg"
                 layout="fill"
                 objectFit="cover"
                 alt="apple-signup"
               />
-            </Link>
+            </div>
+
+            <p className="text-center text-xs  font-bold">Apple</p>
           </div>
-          <p className="text-xs font-bold  text-center">Apple</p>
-        </div>
-        <div className="flex justify-center items-center w-1/2 h-10 border space-x-2">
-          <div className="relative h-6 w-6">
-            <Link href="/">
+        </Link>
+        <Link href="/">
+          <div className="flex h-10 w-1/2 cursor-pointer items-center justify-center space-x-2 border">
+            <div className="relative h-6 w-6">
               <Image
                 src="/images/facebook-icon.svg"
                 layout="fill"
                 objectFit="cover"
                 alt="facebook-signup"
               />
-            </Link>
+            </div>
+            <p className="text-xs font-bold">Facebook</p>
           </div>
-          <p className="text-xs font-bold">Facebook</p>
-        </div>
+        </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Socials
+export default Socials;

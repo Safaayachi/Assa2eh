@@ -3,7 +3,7 @@ import SignInForm from "../components/SignInForm";
 
 const signIn = () => {
   return (
-    <div className=" relative flex h-full w-full items-center justify-center bg-shade">
+    <div className=" relative flex h-screen w-full items-center justify-center bg-darkTint">
       <SignInForm />
     </div>
   );
