@@ -49,7 +49,7 @@ const SignInForm = () => {
               </p>
             </Link>
             <Link href="/signUp">
-              <p className="text-xs font-bold text-secondary">
+              <p className="text-xs font-bold text-secondary cursor-pointer">
                 انشاء حساب الأن
               </p>
             </Link>
