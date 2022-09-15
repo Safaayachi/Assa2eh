@@ -40,7 +40,7 @@ const NavBar = () => {
         <>
           <div className="fixed inset-0 z-40 h-full w-full  bg-secondary opacity-50 md:hidden "></div>
           <div className="fixed inset-0 z-40 h-full w-3/4  bg-tint md:hidden "></div>
-          <div className="fixed inset-0 z-50 h-1/2 w-3/4 flex-col space-y-4 divide-y-2 divide-basic py-8 ">
+          <div className="fixed inset-0 z-50 h-1/2 w-3/4 flex-col space-y-4 divide-y-2 divide-basic py-8 md:hidden">
             <div className="px-8">
               <Link href="/signIn">
                 <button
@@ -59,7 +59,7 @@ const NavBar = () => {
                 </button>
               </Link>
             </div>
-            <div className="py-8">
+            <div className="py-8 md:hidden">
               <ul className="flex-col space-y-4 ">
                 <li className="flex h-12 w-full items-center justify-end px-8 text-xl font-semibold text-secondary hover:text-primary active:border-r-4 active:border-r-primary active:bg-basic">
                   <Link href="/">الصفحة الرئيسية</Link>
