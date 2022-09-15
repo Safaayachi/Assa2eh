@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const SignUpForm = () => {
   return (
-    <div className=" w-full h-full flex-col px-4 space-y-4 justify-center items-center">
+    <div className=" w-full h-1/2 flex-col px-4 space-y-4 justify-center items-center md:h-full md:w-1/2">
       <form className="flex-col space-y-6 justify-center items-center">
         <div className="relative flex justify-end items-center">
           <input

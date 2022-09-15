@@ -5,7 +5,7 @@ import signIn from "../pages/signIn";
 
 const Footer = () => {
   return (
-    <footer className="h-56 bg-secondary md:h-48">
+    <footer className="h-56 bg-secondary md:h-48 w-full">
       <div className=" md-px-8 container mx-auto space-y-4 divide-y-2 divide-primary">
         <div className="flex-col ">
           <div className="flex items-center justify-between py-4 ">

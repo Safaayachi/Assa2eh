@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Socials = () => {
   return (
-    <div>
+    <div className="w-full h-full">
       <Link href="/">
         <div className="flex h-10 w-full cursor-pointer items-center justify-center space-x-2 border">
           <div className="relative h-6 w-6 ">

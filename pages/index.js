@@ -5,7 +5,7 @@ import Search from "../components/Search";
 import MailBox from "../components/MailBox";
 export default function Home() {
   return (
-    <div>
+    <div className="relative h-full w-full">
       <Header />
       <Search/>
       <MailBox/>
