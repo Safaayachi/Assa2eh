@@ -14,7 +14,7 @@ const NavBar = () => {
 
       <ul className="hidden h-20 items-center space-x-16 text-xl font-bold text-secondary md:flex">
         <li className="border-b-transparent flex h-24 items-center justify-center hover:text-primary active:border-b-4 active:border-primary  active:text-primary ">
-          <Link href="/">اتصل بنا</Link>
+          <Link href="/contact">اتصل بنا</Link>
         </li>
         <li className="border-b-transparent flex h-24 items-center justify-center hover:text-primary active:border-b-4 active:border-primary  active:text-primary	">
           <Link href="/">الفنادق</Link>
@@ -69,7 +69,7 @@ const NavBar = () => {
                 </li>
 
                 <li className="flex h-12 w-full items-center justify-end px-8 text-xl font-semibold text-secondary hover:text-primary active:border-r-4 active:border-r-primary active:bg-basic">
-                  <Link href="/">اتصل بنا</Link>
+                  <Link href="/contact">اتصل بنا</Link>
                 </li>
               </ul>
             </div>
