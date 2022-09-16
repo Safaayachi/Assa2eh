@@ -16,28 +16,28 @@ const Destination = () => {
   });
   return (
     <Listbox value={selectedPlace} onChange={setSelectedPlace}>
-      <div className="w-60">
+      <div className="w-full">
         <div className="flex justify-end space-x-4 px-4">
-          <p className="font-semiBold text-md text-darkTint">الوجهة</p>
-          <i className={`icon-place_black_24dp1   text-lg text-primary`} />
+          <p className=" text-sm text-darkTint">الوجهة</p>
+          <i className={`icon-place_black_24dp1 text-sm text-primary`} />
         </div>
-        <div className="flex justify-between p-2">
+        <div className="flex justify-between ">
           <Listbox.Button>
             <i
-              className={`icon-expand_more_black_24dp1   text-lg text-primary`}
+              className={`icon-expand_more_black_24dp1 text-lg text-primary`}
             />
           </Listbox.Button>
 
           <div>
-            <h1 className="px-4 text-xl font-bold text-secondary">
+            <h1 className="px-4 text-md font-semibold text-secondary">
               {selectedPlace.name}
             </h1>
           </div>
         </div>
       </div>
       <Listbox.Options>
-        <ul className="w-60 shadow">
-          <div className="flex-col divide-y-2 divide-basic">
+        <ul className="w-full shadow absolute bg-tint">
+          <div className="flex-col divide-y-2 divide-basic ">
             {places.map((place) => (
               <Listbox.Option key={place.id} value={place}>
                 <div className="hover:bg-basic">

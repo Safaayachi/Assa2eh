@@ -1,12 +1,10 @@
 import React from "react";
-import { Popover } from "@headlessui/react";
 import Image from "next/image";
-import NavBar from "./NavBar";
+import Destination from "./Destination";
 const Header = () => {
   return (
-    <header className="flex-row">
-      <NavBar />
-      <section className="flex h-152 w-full flex-col md:flex-row  ">
+    <header className="relative flex-row">
+      <section className="relative  flex h-208 w-full flex-col md:flex-row ">
         <div className=" mg-0 relative h-1/2 w-full md:h-full md:w-1/2">
           <Image
             src="/images/landingPageCover.jpg"
@@ -23,6 +21,41 @@ const Header = () => {
             <h1 className="text-end font-bold text-secondary md:text-7xl ">
               باحتراف
             </h1>
+          </div>
+        </div>
+        <div className="absolute h-152 w-full  p-32 px-16 md:pt-64">
+          <div className="h-full w-full flex-col space-y-14">
+            <div className=" h-24">
+              <div className="flex-col space-y-4 md:hidden ">
+                <h1 className="  text-center text-4xl  font-black text-secondary  ">
+                  <span className="text-primary">الاختلاف</span> نخدمكم{" "}
+                </h1>
+                <h1 className=" text-center text-4xl font-black text-secondary ">
+                  باحتراف
+                </h1>
+              </div>
+            </div>
+            <div className="relative flex-col space-y-4 divide-y-2 divide-shade bg-tint p-4 shadow md:hidden">
+              <div >
+                <Destination />
+              </div>
+              <div >
+              <Destination />
+              </div>
+              <div >
+              <Destination />
+              </div>
+              <div className="p-4">
+                <button className="h-14 w-full  bg-primary">
+                  <div className="flex items-center justify-center space-x-2  text-tint">
+                    <h1 className="text-2xl font-bold">بحث</h1>
+                    <i
+                      className={`icon-search_black_24dp1 cursor-pointer  text-3xl `}
+                    />
+                  </div>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
