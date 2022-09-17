@@ -4,6 +4,17 @@ import Link from "next/link";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  function handleClick(e){
+    e.preventDefault();
+    setShowMenu({ showMenu: true }, () => {
+      Document.addEventListener("click", this.closeMenu);
+    });
+  }
+  function closeMenu  () {
+    setShowMenu({ showMenu: false }, () => {
+      Document.removeEventListener('click', this.closeMenu);
+    });
+  }
   return (
     <nav className="fixed z-30 flex h-24 w-full items-center justify-between bg-tint md:px-12 md:shadow-lg ">
       <div className="hidden justify-between space-x-14 md:flex">
@@ -30,7 +41,7 @@ const NavBar = () => {
       <button
         className="p-4 md:hidden"
         type="button"
-        onClick={() => setShowMenu(true)}
+        onClick={handleClick}
       >
         <i
           className={`icon-menu_black_24dp1 cursor-pointer  text-3xl text-primary`}
