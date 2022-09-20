@@ -1,20 +1,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  function handleClick(e){
-    e.preventDefault();
-    setShowMenu({ showMenu: true }, () => {
-      Document.addEventListener("click", this.closeMenu);
-    });
-  }
-  function closeMenu  () {
-    setShowMenu({ showMenu: false }, () => {
-      Document.removeEventListener('click', this.closeMenu);
-    });
-  }
+  const router = useRouter();
   return (
     <nav className="fixed z-30 flex h-24 w-full items-center justify-between bg-tint md:px-12 md:shadow-lg ">
       <div className="hidden justify-between space-x-14 md:flex">
@@ -24,7 +15,11 @@ const NavBar = () => {
       </div>
 
       <ul className="hidden h-20 items-center space-x-16 text-xl font-bold text-secondary md:flex">
-        <li className="border-b-transparent flex h-24 items-center justify-center hover:text-primary active:border-b-4 active:border-primary  active:text-primary ">
+        <li
+          className={`border-b-transparent flex h-24 items-center justify-center border-b-4 hover:text-primary ${
+            router.pathname === "/" ? "border-primary  text-primary" : ""
+          } `}
+        >
           <Link href="/contact">اتصل بنا</Link>
         </li>
         <li className="border-b-transparent flex h-24 items-center justify-center hover:text-primary active:border-b-4 active:border-primary  active:text-primary	">
@@ -41,7 +36,7 @@ const NavBar = () => {
       <button
         className="p-4 md:hidden"
         type="button"
-        onClick={handleClick}
+        onClick={() => setShowMenu(true)}
       >
         <i
           className={`icon-menu_black_24dp1 cursor-pointer  text-3xl text-primary`}
@@ -49,40 +44,50 @@ const NavBar = () => {
       </button>
       {showMenu ? (
         <>
-          <div className="fixed inset-0 z-40 h-full w-full  bg-secondary opacity-50 md:hidden "></div>
-          <div className="fixed inset-0 z-40 h-full w-3/4  bg-tint md:hidden "></div>
-          <div className="fixed inset-0 z-50 h-1/2 w-3/4 flex-col space-y-4 divide-y-2 divide-basic py-8 md:hidden">
-            <div className="px-8">
-              <Link href="/signIn">
-                <button
-                  type="button"
-                  className="mb-4 h-12 w-full cursor-pointer bg-primary font-bold text-tint md:hidden"
-                >
-                  تسجيل الدخول
-                </button>
-              </Link>
-              <Link href="/signUp">
-                <button
-                  type="button"
-                  className="h-12 w-full cursor-pointer bg-tint font-bold text-primary md:hidden"
-                >
-                  انشاء حساب
-                </button>
-              </Link>
-            </div>
-            <div className="py-8 md:hidden">
-              <ul className="flex-col space-y-4 ">
-                <li className="flex h-12 w-full items-center justify-end px-8 text-xl font-semibold text-secondary hover:text-primary active:border-r-4 active:border-r-primary active:bg-basic">
-                  <Link href="/">الصفحة الرئيسية</Link>
-                </li>
-                <li className="flex h-12 w-full items-center justify-end px-8 text-xl font-semibold text-secondary hover:text-primary active:border-r-4 active:border-r-primary active:bg-basic">
-                  <Link href="/">الفنادق</Link>
-                </li>
+          <div
+            onClick={() => setShowMenu(false)}
+            className="fixed inset-0 z-40 h-full w-full  bg-secondary opacity-50 md:hidden "
+          ></div>
+          <div className="fixed inset-0 z-40 h-full w-3/4  bg-tint md:hidden ">
+            <div className="flex flex-col space-y-4 divide-y-2 divide-basic py-8">
+              <div className="px-8">
+                <Link href="/signIn">
+                  <button
+                    type="button"
+                    className="mb-4 h-12 w-full cursor-pointer bg-primary font-bold text-tint md:hidden"
+                  >
+                    تسجيل الدخول
+                  </button>
+                </Link>
+                <Link href="/signUp">
+                  <button
+                    type="button"
+                    className="h-12 w-full cursor-pointer bg-tint font-bold text-primary md:hidden"
+                  >
+                    انشاء حساب
+                  </button>
+                </Link>
+              </div>
+              <div className="py-8 md:hidden">
+                <ul className="flex-col space-y-4 ">
+                  <li
+                    className={`flex h-12 w-full items-center justify-end border-r-4 px-8 text-xl font-semibold text-secondary hover:text-primary ${
+                      router.pathname === "/"
+                        ? "border-r-primary text-primary"
+                        : "border-r-transparent"
+                    } `}
+                  >
+                    <Link href="/">الصفحة الرئيسية</Link>
+                  </li>
+                  <li className="flex h-12 w-full items-center justify-end px-8 text-xl font-semibold text-secondary hover:text-primary active:border-r-4 active:border-r-primary active:bg-basic">
+                    <Link href="/">الفنادق</Link>
+                  </li>
 
-                <li className="flex h-12 w-full items-center justify-end px-8 text-xl font-semibold text-secondary hover:text-primary active:border-r-4 active:border-r-primary active:bg-basic">
-                  <Link href="/contact">اتصل بنا</Link>
-                </li>
-              </ul>
+                  <li className="flex h-12 w-full items-center justify-end px-8 text-xl font-semibold text-secondary hover:text-primary active:border-r-4 active:border-r-primary active:bg-basic">
+                    <Link href="/contact">اتصل بنا</Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </>

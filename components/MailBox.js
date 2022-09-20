@@ -30,7 +30,7 @@ const MailBox = () => {
               اشترك
             </button>
             <input
-              className="bg-transparent h-12 w-3/4 border border-tint p-2 text-center focus:outline-none md:h-16 md:w-96"
+              className="bg-transparent h-12 w-3/4 border border-solid border-tint p-2 text-center focus:outline-none md:h-16 md:w-96"
               type="email"
               name="mailbox"
               placeholder="البريد الالكتروني"

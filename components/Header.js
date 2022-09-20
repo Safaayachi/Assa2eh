@@ -35,7 +35,7 @@ const Header = () => {
                 </h1>
               </div>
             </div>
-            <div className="relative flex-col space-y-4 divide-y-2 divide-shade bg-tint p-4 shadow md:hidden">
+            <div className="relative flex flex-col space-y-4 divide-y-2 divide-shade bg-tint p-4 shadow md:flex-row">
               <div>
                 <Destination />
               </div>
