@@ -1,10 +1,7 @@
 {
-  "cSpell.words": [
-    "tailwindcss"
-  ],
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#fce88d",
-    "titleBar.activeBackground": "#fce88d",
-    "titleBar.activeForeground": "#6b6969"
-  }
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#faeb76",
+        "titleBar.activeBackground": "#faeb76",
+        "titleBar.activeForeground": "#6c6a6a"
+    }
 }

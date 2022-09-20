@@ -16,7 +16,7 @@ const Destination = () => {
   });
   return (
     <Listbox value={selectedPlace} onChange={setSelectedPlace}>
-      <div className="w-full">
+      <div className="w-full md:w-80">
         <div className="flex justify-end space-x-4 px-4">
           <p className=" text-sm text-darkTint">الوجهة</p>
           <i className={`icon-place_black_24dp1 text-sm text-primary`} />
@@ -36,7 +36,7 @@ const Destination = () => {
         </div>
       </div>
       <Listbox.Options>
-        <ul className="w-full shadow absolute bg-tint">
+        <ul className="w-full shadow absolute bg-tint md:w-80">
           <div className="flex-col divide-y-2 divide-basic ">
             {places.map((place) => (
               <Listbox.Option key={place.id} value={place}>
