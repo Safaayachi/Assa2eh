@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [session, setSession] = useState(false);
+  const [session, setSession] = useState(true);
   const router = useRouter();
   return (
     <nav className="fixed z-30 flex h-24 w-full items-center justify-between bg-tint md:px-12 md:shadow-lg ">
