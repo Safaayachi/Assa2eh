@@ -23,7 +23,7 @@ const NavBar = () => {
           <Link href="/contact">اتصل بنا</Link>
         </li>
         <li className="border-b-transparent flex h-24 items-center justify-center hover:text-primary active:border-b-4 active:border-primary  active:text-primary	">
-          <Link href="/">الفنادق</Link>
+          <Link href="/hotels">الفنادق</Link>
         </li>
         <li className="border-b-transparent flex h-24 items-center justify-center hover:text-primary active:border-b-4 active:border-b-primary  active:text-primary ">
           <Link href="/">حجز نقل</Link>
@@ -48,7 +48,7 @@ const NavBar = () => {
             onClick={() => setShowMenu(false)}
             className="fixed inset-0 z-40 h-full w-full  bg-secondary opacity-50 md:hidden "
           ></div>
-          <div className="fixed inset-0 z-40 h-full w-3/4  bg-tint md:hidden ">
+          <div className=" fixed inset-0 z-40 h-full w-3/4  bg-tint md:hidden ">
             <div className="flex flex-col space-y-4 divide-y-2 divide-basic py-8">
               <div className="px-8">
                 <Link href="/signIn">
@@ -80,7 +80,7 @@ const NavBar = () => {
                     <Link href="/">الصفحة الرئيسية</Link>
                   </li>
                   <li className="flex h-12 w-full items-center justify-end px-8 text-xl font-semibold text-secondary hover:text-primary active:border-r-4 active:border-r-primary active:bg-basic">
-                    <Link href="/">الفنادق</Link>
+                    <Link href="/hotels">الفنادق</Link>
                   </li>
 
                   <li className="flex h-12 w-full items-center justify-end px-8 text-xl font-semibold text-secondary hover:text-primary active:border-r-4 active:border-r-primary active:bg-basic">
