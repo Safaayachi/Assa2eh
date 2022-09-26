@@ -2,7 +2,7 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 
-const hotels = () => {
+const profile = () => {
   return (
     <div className="absolute flex h-full w-full flex-col">
       <NavBar />
@@ -13,4 +13,4 @@ const hotels = () => {
   )
 }
 
-export default hotels
+export default profile

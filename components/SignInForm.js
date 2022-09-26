@@ -6,7 +6,7 @@ import signUp from "../pages/signUp";
 
 const SignInForm = () => {
   return (
-    <div className="h-full w-full bg-tint p-4 md:my-52 md:h-152 md:w-1/5 md:p-4 md:py-12 ">
+    <div className=" absolute flex h-full w-full flex-col bg-tint p-4 md:my-52 md:h-152 md:w-1/3 md:p-4 md:py-12 ">
       <div className="flex-col justify-center space-y-3">
         <div className="mt-1 mb-6 flex w-full space-x-32">
           <Link href="/">
@@ -49,7 +49,7 @@ const SignInForm = () => {
               </p>
             </Link>
             <Link href="/signUp">
-              <p className="text-xs font-bold text-secondary cursor-pointer">
+              <p className="cursor-pointer text-xs font-bold text-secondary">
                 انشاء حساب الأن
               </p>
             </Link>
@@ -58,7 +58,6 @@ const SignInForm = () => {
             className="h-10 w-full bg-primary text-center text-sm font-semibold text-tint"
             type="submit "
           >
-            {" "}
             تسجيل الدخول
           </button>
         </form>
