@@ -33,7 +33,7 @@ const NavBar = () => {
                         className={`${active && "bg-blue-500"}`}
                         href="/profile"
                       >
-                        <h1 className="text-center">الملف الشخصي</h1>
+                        <h1 className="text-center cursor-pointer hover:text-primary">الملف الشخصي</h1>
                       </Link>
                     </div>
                   )}
@@ -45,7 +45,7 @@ const NavBar = () => {
                         className={`${active && "bg-blue-500"}`}
                         href="/reservations"
                       >
-                        <h1 className="text-center">حجوزاتي</h1>
+                        <h1 className="text-center cursor-pointer hover:text-primary">حجوزاتي</h1>
                       </Link>
                     </div>
                   )}
