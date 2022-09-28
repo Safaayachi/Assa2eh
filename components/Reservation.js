@@ -65,7 +65,7 @@ const Reservation = () => {
       hotel: "فندق الصفوة البرج الاول",
       resDate: "30 يوليو 2021",
       arrivalDate: "30 يوليو 2021",
-      price:"1680.00",
+      price: "1680.00",
       resState: "ألغيت",
     },
     {
@@ -84,7 +84,6 @@ const Reservation = () => {
       price: "1680.00",
       resState: "تم التأكيد",
     },
-    
   ];
   const [selectedOption, setSelectedOption] = useState(options[0]);
   return (
@@ -198,7 +197,7 @@ const Reservation = () => {
                 </Listbox.Options>
               </div>
             </Listbox>
-            <div className="flex flex-row justify-end px-2 space-x-4 border border-solid border-primary ">
+            <div className="flex flex-row justify-end space-x-4 border border-solid border-primary px-2 ">
               <input
                 type="text"
                 className="w-full p-2 text-end md:w-2/6"
@@ -224,22 +223,42 @@ const Reservation = () => {
             </li>
             {userReservations.map((userReservation) => (
               <li className="px-12 py-4 " key={userReservation.id}>
-              <div className="flex w-full flex-row justify-between text-sm font-semibold text-secondary">
-                {userReservation.resState=="تم التأكيد"? (<Link href="./pages/hotelInfo"><div className="w-40 cursor-pointer flex justify-end items-center">
-                  <p className="w-20 p-2 bg-success text-center text-tint">{userReservation.resState}</p>
-                </div></Link>): userReservation.resState=="ألغيت"?(<Link href="./pages/hotelInfo"><div className="w-40 cursor-pointer flex justify-end items-center">
-                  <p className="w-20 p-2 bg-danger text-center text-tint">{userReservation.resState}</p>
-                </div></Link>):(<Link href="./pages/hotelInfo"><div className="w-40 cursor-pointer flex justify-end items-center">
-                  <p className="w-20 p-2 bg-warning text-center text-tint">{userReservation.resState}</p>
-                </div></Link>)
-
-                }
-                <p className="w-40 py-2 text-end">{userReservation.price}</p>
-                <p className="w-40 py-2 text-end">{userReservation.arrivalDate}</p>
-                <p className="w-40 py-2 text-end">{userReservation.resDate}</p>
-                <p className="w-40 py-2 text-end">{userReservation.hotel}</p>
-              </div>
-            </li>
+                <div className="flex w-full flex-row justify-between text-sm font-semibold text-secondary">
+                  {userReservation.resState == "تم التأكيد" ? (
+                    <Link href="/hotelInfo">
+                      <div className="flex w-40 cursor-pointer items-center justify-end">
+                        <p className="w-20 bg-success p-2 text-center text-tint">
+                          {userReservation.resState}
+                        </p>
+                      </div>
+                    </Link>
+                  ) : userReservation.resState == "ألغيت" ? (
+                    <Link href="/hotelInfo">
+                      <div className="flex w-40 cursor-pointer items-center justify-end">
+                        <p className="w-20 bg-danger p-2 text-center text-tint">
+                          {userReservation.resState}
+                        </p>
+                      </div>
+                    </Link>
+                  ) : (
+                    <Link href="/hotelInfo">
+                      <div className="flex w-40 cursor-pointer items-center justify-end">
+                        <p className="w-20 bg-warning p-2 text-center text-tint">
+                          {userReservation.resState}
+                        </p>
+                      </div>
+                    </Link>
+                  )}
+                  <p className="w-40 py-2 text-end">{userReservation.price}</p>
+                  <p className="w-40 py-2 text-end">
+                    {userReservation.arrivalDate}
+                  </p>
+                  <p className="w-40 py-2 text-end">
+                    {userReservation.resDate}
+                  </p>
+                  <p className="w-40 py-2 text-end">{userReservation.hotel}</p>
+                </div>
+              </li>
             ))}
           </ul>
         </div>
