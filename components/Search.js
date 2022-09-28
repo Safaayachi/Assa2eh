@@ -1,100 +1,50 @@
 import React from "react";
-import HotelCard from "./HotelCard";
 import Link from "next/link";
-import { Tab } from "@headlessui/react";
+import Destination from "./Destination";
 
 const Search = () => {
-  const hotels = [
-    {
-      id: 1,
-      hotelName: "فندق شيراتون مكة جبل الكعبة",
-      hotelDescription: "وقف الملك عبد العزيز مكة المكرمة",
-      hotelSlug: "hotel",
-      hotelStars: 5,
-    },
-    {
-      id: 2,
-      hotelName: "فندق ماريوت مكة جبل عمر",
-      hotelDescription: "وقف الملك عبد العزيز مكة المكرمة",
-      hotelSlug: "hotel2",
-      hotelStars: 5,
-    },
-    {
-      id: 3,
-      hotelName: "فندق سويس اوتيل المقام مكة",
-      hotelDescription: "وقف الملك عبد العزيز مكة المكرمة",
-      hotelSlug: "hotel3",
-      hotelStars: 5,
-    },
-    {
-      id: 2,
-      hotelName: "فندق ماريوت مكة جبل عمر",
-      hotelDescription: "وقف الملك عبد العزيز مكة المكرمة",
-      hotelSlug: "hotel2",
-      hotelStars: 5,
-    },
-    {
-      id: 4,
-      hotelName: "فندق المروة ريحان روتانا مكة",
-      hotelDescription: "وقف الملك عبد العزيز مكة المكرمة",
-      hotelSlug: "hotel",
-      hotelStars: 5,
-    },
-    {
-      id: 5,
-      hotelName: "فندق شيراتون مكة جبل الكعبة",
-      hotelDescription: "وقف الملك عبد العزيز مكة المكرمة",
-      hotelSlug: "hotel5",
-      hotelStars: 5,
-    },
-    {
-      id: 1,
-      hotelName: "فندق شيراتون مكة جبل الكعبة",
-      hotelDescription: "وقف الملك عبد العزيز مكة المكرمة",
-      hotelSlug: "hotel",
-      hotelStars: 5,
-    },
-    {
-      id: 2,
-      hotelName: "فندق ماريوت مكة جبل عمر",
-      hotelDescription: "وقف الملك عبد العزيز مكة المكرمة",
-      hotelSlug: "hotel2",
-      hotelStars: 5,
-    },
-  ];
-  const places = [
-    { id: 1, placeName: "الدمام" },
-    { id: 2, placeName: "الرياض" },
-    { id: 2, placeName: "الطائف" },
-    { id: 4, placeName: " المدينة المنورة" },
-    { id: 5, placeName: "جدة" },
-    { id: 6, placeName: "مكة المكرمة" },
-  ];
   return (
-    <div className="flex flex-col">
-      <div className="flex justify-end px-24">
-        <h1 className="text-4xl font-bold">الفنادق المميزة</h1>
+    <div className="relative flex flex-col space-y-4 divide-y-2 divide-solid divide-shade bg-tint p-4 shadow md:w-2/3           md:flex-row-reverse md:space-x-8 md:divide-x-2 md:divide-y-0 ">
+      <div>
+        <Destination />
       </div>
-      <Tab.Group>
-        <Tab.List className="border-bold flex flex-row justify-end space-x-12 overflow-x-auto border-b-4 p-6">
-          {places.map((place) => (
-            <Tab key={place.id} id={place.id}>
-              <h1 className="flex h-10 text-lg font-semibold text-darkTint  hover:text-secondary">
-                {place.placeName}
-              </h1>
-            </Tab>
-          ))}
-        </Tab.List>
-        <Tab.Panels>
-          <Tab.Panel className="h-full w-full p-4">
-            <div className="flex flex-row space-x-4 overflow-x-auto">
-              {hotels.map((hotel) => (
-                <HotelCard hotel={hotel} key={hotel.id} />
-              ))}
-            </div>
-          </Tab.Panel>
-        </Tab.Panels>
-      </Tab.Group>
+      <div className="relative flex w-full space-x-2 p-4 md:w-80">
+        <div className="flex w-1/2 justify-start space-x-2 ">
+          <i
+            className={`icon-calendar_today_black_24dp1 text-sm text-primary`}
+          />
+          <p className="text-xs font-semibold text-darkTint">تاريخ الوصول </p>
+        </div>
+        <div className="flex w-1/2 justify-end space-x-2">
+          <p className="text-xs font-semibold text-darkTint">تاريخ الوصول </p>
+          <i
+            className={`icon-calendar_today_black_24dp1 text-sm text-primary`}
+          />
+        </div>
+      </div>
+      <div className="flex-col space-y-4 ">
+        <div className="flex justify-end space-x-2">
+          <h1 className="text-sm text-darkTint">البرموكود</h1>
+          <i className={` icon-uniE901 text-sm text-primary`} />
+        </div>
+        <div className="">
+          <input
+            type="text"
+            placeholder="...البرموكود"
+            className="w-full text-end text-lg text-shade "
+          />
+        </div>
+      </div>
+      <div className="p-4">
+        <Link href="/searchResults">
+          <div className="flex h-14  w-full items-center justify-center space-x-2 bg-primary text-tint   md:w-14">
+            <h1 className="text-2xl font-bold md:hidden">بحث</h1>
+            <i
+              className={`icon-search_black_24dp1 cursor-pointer  text-3xl `}
+            />
+          </div>
+        </Link>
+      </div>
     </div>
   );
 };

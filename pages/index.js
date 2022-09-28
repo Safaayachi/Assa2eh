@@ -1,7 +1,7 @@
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Search from "../components/Search";
+import TopHotelsDisplay from "../components/TopHotelsDisplay";
 import MailBox from "../components/MailBox";
 import NavBar from "../components/NavBar";
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
     <div className="relative h-full w-full">
       <NavBar/>
       <Header />
-      <Search/>
+      <TopHotelsDisplay/>
       <MailBox/>
       <Footer/>
     </div>
