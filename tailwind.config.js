@@ -18,6 +18,10 @@ module.exports = {
         112: "28rem",
         208: "52rem",
         96: "24rem",
+        184:"46rem",
+        280:"70rem",
+        320:"80rem",
+        140:"35rem",
       },
       colors: {
         primary: "#b38e55",

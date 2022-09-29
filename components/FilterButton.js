@@ -5,13 +5,15 @@ const FilterButton = () => {
   return (
     <>
       <button
-        className="flex cursor-pointer flex-row border border-solid border-black py-2 px-4"
+        className="flex h-full w-full cursor-pointer justify-center items-center border border-solid border-black"
         onClick={() => setShowFilterModal(true)}
       >
-        <i
-          className={`icon-arrow_drop_down_black_24dp1   text-3xl text-black`}
-        />
-        <h1 className="text-2xl font-bold">تصنيف بحسب</h1>
+        <div className="flex flex-row">
+          <i
+            className={`icon-arrow_drop_down_black_24dp1   text-3xl text-black`}
+          />
+          <h1 className="text-2xl font-bold">تصنيف بحسب</h1>
+        </div>
       </button>
       {showFilterModal ? (
         <div className="fixed inset-0 z-40 mt-2 h-full w-full">
