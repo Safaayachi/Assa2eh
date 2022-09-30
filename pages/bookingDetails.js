@@ -163,23 +163,29 @@ const bookingDetails = () => {
             </div>
           </div>
         </div>
-        <div className="relative w-full ">
-          <Footer />
 
-          <div className=" flex h-32 w-full flex-row items-center justify-around">
-            <Link href="/bookingConfirmation">
-              <div className=" w-52 cursor-pointer bg-secondary  py-6 text-center text-3xl font-bold text-tint">
-                احجز
-              </div>
-            </Link>
-            <div className="flex w-1/2 flex-col items-end space-y-2">
-              <p className="text-lg font-bold text-secondary">اجمالي السعر</p>
-              <div className="flex flex-row space-x-2">
-                <h1 className="text-3xl font-bold text-primary">ريال</h1>
-                <h1 className="text-3xl font-bold text-primary">1200</h1>
-              </div>
-              <p className="text-darkTint">شامل الضرائب و الرسوم</p>
+        <Footer />
+        <div className="h-8">
+          
+        </div>
+        
+        <div className="absolute inset-0 mt-2 h-full w-full">
+          <div className="fixed inset-0 z-40 flex h-full w-full flex-col items-end justify-end">
+          <div className="fixed flex h-32 w-full flex-row items-center justify-around bg-tint">
+          <Link href="/bookingConfirmation">
+            <div className=" w-52 cursor-pointer bg-secondary  py-6 text-center text-3xl font-bold text-tint">
+              احجز
             </div>
+          </Link>
+          <div className="flex w-1/2 flex-col items-end space-y-2">
+            <p className="text-lg font-bold text-secondary">اجمالي السعر</p>
+            <div className="flex flex-row space-x-2">
+              <h1 className="text-3xl font-bold text-primary">ريال</h1>
+              <h1 className="text-3xl font-bold text-primary">1200</h1>
+            </div>
+            <p className="text-darkTint">شامل الضرائب و الرسوم</p>
+          </div>
+        </div>
           </div>
         </div>
       </div>

@@ -67,18 +67,22 @@ const NavBar = () => {
       <ul className="hidden h-20 items-center space-x-16 text-xl font-bold text-secondary md:flex">
         <li
           className={`flex h-24 items-center justify-center border-b-4 border-b-transparent hover:text-primary ${
-            router.pathname === "/" ? "border-primary  text-primary" : ""
+            router.pathname === "/contact" ? "border-b-primary  text-primary" : ""
           } `}
         >
           <Link href="/contact">اتصل بنا</Link>
         </li>
-        <li className="flex h-24 items-center justify-center border-b-transparent hover:text-primary active:border-b-4 active:border-primary  active:text-primary	">
+        <li className={`flex h-24 items-center justify-center border-b-4 border-b-transparent hover:text-primary ${
+            router.pathname === "/hotels" ? "border-b-primary  text-primary" : ""
+          } `}>
           <Link href="/hotels">الفنادق</Link>
         </li>
-        <li className="flex h-24 items-center justify-center border-b-transparent hover:text-primary active:border-b-4 active:border-b-primary  active:text-primary ">
+        <li className={`flex h-24 items-center justify-center border-b-4 border-b-transparent hover:text-primary  `}>
           <Link href="/">حجز نقل</Link>
         </li>
-        <li className="flex h-24 items-center justify-center border-primary border-b-transparent hover:text-primary active:border-b-4 active:text-primary">
+        <li className={`flex h-24 items-center justify-center border-b-4 border-b-transparent hover:text-primary ${
+            router.pathname === "/" ? "border-b-primary  text-primary" : ""
+          } `}>
           <Link href="/">حجز فندق</Link>
         </li>
       </ul>
@@ -129,11 +133,19 @@ const NavBar = () => {
                   >
                     <Link href="/">الصفحة الرئيسية</Link>
                   </li>
-                  <li className="flex h-12 w-full items-center justify-end px-8 text-xl font-semibold text-secondary hover:text-primary active:border-r-4 active:border-r-primary active:bg-basic">
+                  <li className={`flex h-12 w-full items-center justify-end border-r-4 px-8 text-xl font-semibold text-secondary hover:text-primary ${
+                      router.pathname === "/hotels"
+                        ? "border-r-primary text-primary"
+                        : "border-r-transparent"
+                    } `}>
                     <Link href="/hotels">الفنادق</Link>
                   </li>
 
-                  <li className="flex h-12 w-full items-center justify-end px-8 text-xl font-semibold text-secondary hover:text-primary active:border-r-4 active:border-r-primary active:bg-basic">
+                  <li className={`flex h-12 w-full items-center justify-end border-r-4 px-8 text-xl font-semibold text-secondary hover:text-primary ${
+                      router.pathname === "/contact"
+                        ? "border-r-primary text-primary"
+                        : "border-r-transparent"
+                    } `}>
                     <Link href="/contact">اتصل بنا</Link>
                   </li>
                 </ul>

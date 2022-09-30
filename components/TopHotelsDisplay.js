@@ -71,30 +71,91 @@ const Search = () => {
     { id: 6, placeName: "مكة المكرمة" },
   ];
   return (
-    <div className="flex flex-col">
-      <div className="flex justify-end px-24">
-        <h1 className="text-4xl font-bold">الفنادق المميزة</h1>
-      </div>
-      <Tab.Group>
-        <Tab.List className="border-bold flex flex-row justify-end space-x-12 overflow-x-auto border-b-4 p-6">
-          {places.map((place) => (
-            <Tab key={place.id} id={place.id}>
-              <h1 className="flex h-10 text-lg font-semibold text-darkTint  hover:text-secondary">
-                {place.placeName}
-              </h1>
-            </Tab>
-          ))}
-        </Tab.List>
-        <Tab.Panels>
-          <Tab.Panel className="h-full w-full p-4">
-            <div className="flex flex-row space-x-4 overflow-x-auto">
-              {hotels.map((hotel) => (
-                <HotelCard hotel={hotel} key={hotel.id} />
-              ))}
+    <div className="relative flex h-full w-full flex-col p-16 md:p-32">
+      <div className="relative flex h-full w-full flex-col space-y-10 ">
+        <div className="flex h-24 w-full justify-end">
+          <h1 className="text-4xl font-bold">الفنادق المميزة</h1>
+        </div>
+        <Tab.Group>
+          <div className="relative flex h-full w-full flex-col space-y-10">
+            <div className="relative h-24 w-full ">
+              <Tab.List className="relative flex h-24 w-full flex-row justify-end space-x-12  border-b-4 ">
+                {places.map((place) => (
+                  <Tab key={place.id} id={place.id}>
+                    <h1 className=" h-24 border-b-4 border-transparent text-lg font-semibold text-darkTint hover:text-secondary  active:border-primary">
+                      {place.placeName}
+                    </h1>
+                  </Tab>
+                ))}
+              </Tab.List>
             </div>
-          </Tab.Panel>
-        </Tab.Panels>
-      </Tab.Group>
+            <Tab.Panels>
+              <Tab.Panel>
+                <div className="relative flex h-full w-full flex-row space-x-10 overflow-x-auto md:grid md:gap-10 md:space-x-0 lg:grid-cols-3 xl:grid-cols-4">
+                  {hotels.map((hotel) => (
+                    <div key={hotel.id} className="md:w-78 w-full">
+                      <HotelCard hotel={hotel} key={hotel.id} />
+                    </div>
+                  ))}
+                </div>
+              </Tab.Panel>
+              <Tab.Panel>
+                <div className="relative flex h-full w-full flex-row space-x-10 overflow-x-scroll md:grid md:gap-10 md:space-x-0 lg:grid-cols-3 xl:grid-cols-4">
+                  {hotels.map((hotel) => (
+                    <div key={hotel.id} className="md:w-78 w-full">
+                      <HotelCard hotel={hotel} key={hotel.id} />
+                    </div>
+                  ))}
+                </div>
+              </Tab.Panel>
+              <Tab.Panel>
+                <div className="relative flex h-full w-full flex-row space-x-10 overflow-x-scroll md:grid md:gap-10 md:space-x-0 lg:grid-cols-3 xl:grid-cols-4">
+                  {hotels.map((hotel) => (
+                    <div key={hotel.id} className="md:w-78 w-full">
+                      <HotelCard hotel={hotel} key={hotel.id} />
+                    </div>
+                  ))}
+                </div>
+              </Tab.Panel>
+              <Tab.Panel>
+                <div className="relative flex h-full w-full flex-row space-x-10 overflow-x-scroll md:grid md:gap-10 md:space-x-0 lg:grid-cols-3 xl:grid-cols-4">
+                  {hotels.map((hotel) => (
+                    <div key={hotel.id} className="md:w-78 w-full">
+                      <HotelCard hotel={hotel} key={hotel.id} />
+                    </div>
+                  ))}
+                </div>
+              </Tab.Panel>
+              <Tab.Panel>
+                <div className="relative flex h-full w-full flex-row space-x-10 overflow-x-scroll md:grid md:gap-10 md:space-x-0 lg:grid-cols-3 xl:grid-cols-4">
+                  {hotels.map((hotel) => (
+                    <div key={hotel.id} className="md:w-78 w-full">
+                      <HotelCard hotel={hotel} key={hotel.id} />
+                    </div>
+                  ))}
+                </div>
+              </Tab.Panel>
+              <Tab.Panel>
+                <div className="relative flex h-full w-full flex-row space-x-10 overflow-x-scroll md:grid md:gap-10 md:space-x-0 lg:grid-cols-3 xl:grid-cols-4">
+                  {hotels.map((hotel) => (
+                    <div key={hotel.id} className="md:w-78 w-full">
+                      <HotelCard hotel={hotel} key={hotel.id} />
+                    </div>
+                  ))}
+                </div>
+              </Tab.Panel>
+            </Tab.Panels>
+          </div>
+        </Tab.Group>
+
+        <div className="relative flex h-28  w-full flex-row items-center justify-center py-4 md:justify-start">
+          <Link href="/hotels">
+            <div className="flex h-full w-full cursor-pointer items-center justify-center border border-secondary md:w-60">
+              <h1 className="text-2xl font-bold text-secondary">كل الفنادق</h1>
+            </div>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };

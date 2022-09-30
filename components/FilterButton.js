@@ -4,8 +4,8 @@ const FilterButton = () => {
   const [showFilterModal, setShowFilterModal] = useState(false);
   return (
     <>
-      <button
-        className="flex h-full w-full cursor-pointer justify-center items-center border border-solid border-black"
+      <div
+        className="flex h-full w-full cursor-pointer justify-center border border-solid border-black py-2"
         onClick={() => setShowFilterModal(true)}
       >
         <div className="flex flex-row">
@@ -14,7 +14,7 @@ const FilterButton = () => {
           />
           <h1 className="text-2xl font-bold">تصنيف بحسب</h1>
         </div>
-      </button>
+      </div>
       {showFilterModal ? (
         <div className="fixed inset-0 z-40 mt-2 h-full w-full">
           <div className="fixed inset-0 z-40 flex h-full w-full flex-col items-end justify-end">

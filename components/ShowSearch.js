@@ -5,7 +5,7 @@ import Search from "./Search";
 const ShowSearch = () => {
   const [showSearch, setShowSearch] = useState(false);
   return (
-    <section className="relative mt-24 flex h-20 w-full flex-col z-20">
+    <section className="md:hidden relative mt-24 flex h-20 w-full flex-col z-20">
       <button
         className="h-20 w-full cursor-pointer bg-primary px-12 shadow-lg"
         onClick={() => setShowSearch(true)}

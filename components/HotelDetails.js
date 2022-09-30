@@ -13,7 +13,7 @@ const HotelDetails = ({ hotel }) => {
           objectFit="cover"
         />
       </div>
-      <div className="relative flex h-2/3 w-full flex-col divide-y-2 divide-basic p-4">
+      <div className="relative flex h-2/3 w-full flex-col divide-y-2 bg-tint divide-basic p-4">
         <div className="flex h-3/6 w-full flex-col items-end space-y-2">
           <h1 className=" text-xl font-bold">{hotel.hotelName}</h1>
           <div className="flex flex-row space-x-1 ">

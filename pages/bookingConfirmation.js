@@ -3,7 +3,7 @@ import Link from "next/link";
 import BookingHotelCard from "../components/BookingHotelCard";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import PaymentButton from "../components/PaymentButton";
+
 
 const bookingConfirmation = () => {
   return (

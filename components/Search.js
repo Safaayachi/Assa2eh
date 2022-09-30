@@ -4,7 +4,7 @@ import Destination from "./Destination";
 
 const Search = () => {
   return (
-    <div className="relative flex flex-col space-y-4 divide-y-2 divide-solid divide-shade bg-tint p-4 shadow md:w-2/3           md:flex-row-reverse md:space-x-8 md:divide-x-2 md:divide-y-0 ">
+    <div className="relative flex flex-col space-y-4 divide-y-2 divide-solid divide-shade bg-tint p-4 shadow md:h-28           md:flex-row-reverse md:space-x-8 md:divide-x-2 md:divide-y-0 ">
       <div>
         <Destination />
       </div>
@@ -37,7 +37,7 @@ const Search = () => {
       </div>
       <div className="p-4">
         <Link href="/searchResults">
-          <div className="flex h-14  w-full items-center justify-center space-x-2 bg-primary text-tint   md:w-14">
+          <div className="flex h-14 cursor-pointer w-full items-center justify-center space-x-2 bg-primary text-tint   md:w-14">
             <h1 className="text-2xl font-bold md:hidden">بحث</h1>
             <i
               className={`icon-search_black_24dp1 cursor-pointer  text-3xl `}
