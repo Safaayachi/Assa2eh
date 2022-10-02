@@ -16,7 +16,7 @@ const Destination = () => {
   });
   return (
     <Listbox value={selectedPlace} onChange={setSelectedPlace}>
-      <div className="w-full md:w-80">
+      <div className="w-full h-full md:w-80">
         <div className="flex justify-end space-x-4 px-4">
           <p className=" text-sm text-darkTint">الوجهة</p>
           <i className={`icon-place_black_24dp1 text-sm text-primary`} />

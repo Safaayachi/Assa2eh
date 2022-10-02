@@ -91,7 +91,7 @@ const Search = () => {
             </div>
             <Tab.Panels>
               <Tab.Panel>
-                <div className="relative flex h-full w-full flex-row space-x-10 overflow-x-auto md:grid md:gap-10 md:space-x-0 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="relative flex h-full w-full flex-row space-x-10 overflow-x-auto md:grid md:gap-10 md:space-x-0 lg:grid-cols-3 xl:grid-cols-4 md:pb-24">
                   {hotels.map((hotel) => (
                     <div key={hotel.id} className="md:w-78 w-full">
                       <HotelCard hotel={hotel} key={hotel.id} />

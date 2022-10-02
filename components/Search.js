@@ -35,9 +35,9 @@ const Search = () => {
           />
         </div>
       </div>
-      <div className="p-4">
+      <div >
         <Link href="/searchResults">
-          <div className="flex h-14 cursor-pointer w-full items-center justify-center space-x-2 bg-primary text-tint   md:w-14">
+          <div className="flex h-14 cursor-pointer w-full items-center justify-center space-x-2 bg-primary text-tint   md:w-16 ">
             <h1 className="text-2xl font-bold md:hidden">بحث</h1>
             <i
               className={`icon-search_black_24dp1 cursor-pointer  text-3xl `}

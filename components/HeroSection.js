@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Search from "./Search";
-import TopHotelsDisplay from "./TopHotelsDisplay";
-const Header = () => {
+
+const HeroSection = () => {
   return (
     <header className="relative flex-row">
       <section className="relative  flex h-208 w-full flex-col md:flex-row ">
@@ -46,4 +46,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeroSection;

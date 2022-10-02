@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const BookingHotelCard = () => {
   return (
-    <div className="relative h-112 w-full bg-tint  shadow-xl">
-      <div className="relative h-2/5 w-full ">
+    <div className="relative h-112 w-full bg-tint  shadow-xl flex flex-col md:flex-row-reverse">
+      <div className="relative h-2/5 w-full md:h-full md:w-2/5 ">
         <Image
           src={`/images/hotel3.jpg`}
           alt="hotel3"
