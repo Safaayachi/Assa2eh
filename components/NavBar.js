@@ -13,17 +13,19 @@ const NavBar = () => {
       {session ? (
         <Menu>
           <div className="hidden md:flex w-48 md:flex-col">
+          <Menu.Button>
             <div className="mb-8 mt-10 w-24 items-center justify-between space-x-2 self-center md:flex">
-              <Menu.Button>
+              
                 <i
                   className={`  icon-arrow_drop_down_black_24dp1 text-xl text-primary `}
                 />
-              </Menu.Button>
+              
               <h1 className="text-center text-xs text-secondary ">محمد</h1>
               <i
                 className={` icon-person_black_24dp1 border border-solid border-primary text-3xl text-secondary`}
               />
             </div>
+            </Menu.Button>
             <Menu.Items>
               <div className="absolute flex w-48 flex-col items-center justify-center space-y-2 divide-y-2 divide-basic bg-tint p-4 shadow">
                 <Menu.Item>

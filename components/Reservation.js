@@ -4,11 +4,22 @@ import { useState } from "react";
 import Link from "next/link";
 
 const Reservation = () => {
-  const options = [
-    { id: 1, name: "option1" },
-    { id: 2, name: "option2" },
-    { id: 3, name: "option3" },
-    { id: 4, name: "option4" },
+  const reservationOptions = [
+    { id: 1, name: "30 يوليو 2021" },
+    { id: 2, name: "30 يوليو 2021" },
+    { id: 3, name: "30 يوليو 2021" },
+    { id: 4, name: "30 يوليو 2021" },
+  ];
+  const travelingDateOptions = [
+    { id: 1, name: "30 يوليو 2021" },
+    { id: 2, name: "30 يوليو 2021" },
+    { id: 3, name: "30 يوليو 2021" },
+    { id: 4, name: "30 يوليو 2021" },
+  ];
+  const reservationStates = [
+    { id: 1, name: "تم التأكيد" },
+    { id: 2, name: "ألغيت" },
+    { id: 3, name: "فشل" },
   ];
   const userReservations = [
     {
@@ -85,43 +96,58 @@ const Reservation = () => {
       resState: "تم التأكيد",
     },
   ];
-  const [selectedOption, setSelectedOption] = useState(options[0]);
+  const [selectedReservationOption, setSelectedReservationOption] = useState({
+    id: 0,
+    name: "تم الحجز في",
+  });
+  const [selectedTravelingDateOption, setSelectedTravelingDateOption] =
+    useState({ id: 0, name: "موعد السفر" });
+  const [selectedReservationState, setSelectedReservationState] = useState({
+    id: 0,
+    name: "حالة الحجز",
+  });
   return (
     <div className="hidden h-full w-full flex-col bg-tint p-28 md:flex">
       <div className="relative flex h-full w-full flex-col space-y-6 p-2 px-12">
         <form className="flex h-24 w-full flex-row items-center justify-between bg-tint px-4 shadow-lg">
           <button
             type="submit"
-            className="w-36 bg-secondary p-2 text-tint md:w-28"
+            className=" mb-8  mt-10 w-36 bg-secondary p-3 text-tint md:w-28"
           >
             <h1 className="text-lg">بحث</h1>
           </button>
 
           <div className="flex w-2/3 flex-row items-center justify-center space-x-8">
-            <Listbox value={selectedOption} onChange={setSelectedOption}>
-              <div className="relative flex w-56 flex-col space-y-12 md:w-1/6">
-                <div className=" flex justify-between  border border-solid border-primary p-1 ">
-                  <Listbox.Button>
+            <Listbox
+              value={selectedReservationOption}
+              onChange={setSelectedReservationOption}
+            >
+              <div className="relative flex w-56 flex-col  md:w-1/6">
+                <Listbox.Button>
+                  <div className=" mb-8  mt-10 flex justify-between  border border-solid border-primary p-2 ">
                     <i
-                      className={`icon-expand_more_black_24dp1 text-2xl font-bold text-secondary`}
+                      className={`icon-expand_more_black_24dp1 text-2xl  text-secondary`}
                     />
-                  </Listbox.Button>
 
-                  <div>
-                    <h1 className=" text-md text-secondary">
-                      {selectedOption.name}
-                    </h1>
+                    <div>
+                      <h1 className=" text-md text-darkTint">
+                        {selectedReservationOption.name}
+                      </h1>
+                    </div>
                   </div>
-                </div>
+                </Listbox.Button>
                 <Listbox.Options>
                   <ul className="absolute w-full bg-tint shadow ">
                     <div className="flex-col divide-y-2 divide-basic ">
-                      {options.map((option) => (
-                        <Listbox.Option key={option.id} value={option}>
+                      {reservationOptions.map((reservationOption) => (
+                        <Listbox.Option
+                          key={reservationOption.id}
+                          value={reservationOption}
+                        >
                           <div className="hover:bg-basic">
-                            <li className="p-2 px-6 text-end ">
+                            <li className="cursor-pointer p-2 px-6 text-end text-darkTint hover:text-primary">
                               {" "}
-                              {option.name}
+                              {reservationOption.name}
                             </li>
                           </div>
                         </Listbox.Option>
@@ -131,30 +157,36 @@ const Reservation = () => {
                 </Listbox.Options>
               </div>
             </Listbox>
-            <Listbox value={selectedOption} onChange={setSelectedOption}>
-              <div className="relative flex w-56 flex-col space-y-12 md:w-1/6">
-                <div className=" flex justify-between  border border-solid border-primary p-1 ">
-                  <Listbox.Button>
+            <Listbox
+              value={selectedTravelingDateOption}
+              onChange={setSelectedTravelingDateOption}
+            >
+              <div className="relative flex w-56 flex-col  md:w-1/6">
+                <Listbox.Button>
+                  <div className=" mb-8  mt-10 flex justify-between  border border-solid border-primary p-2 ">
                     <i
-                      className={`icon-expand_more_black_24dp1 text-2xl font-bold text-secondary`}
+                      className={`icon-expand_more_black_24dp1 text-2xl  text-secondary`}
                     />
-                  </Listbox.Button>
 
-                  <div>
-                    <h1 className=" text-md text-secondary">
-                      {selectedOption.name}
-                    </h1>
+                    <div>
+                      <h1 className=" text-md text-darkTint">
+                        {selectedTravelingDateOption.name}
+                      </h1>
+                    </div>
                   </div>
-                </div>
+                </Listbox.Button>
                 <Listbox.Options>
                   <ul className="absolute w-full bg-tint shadow ">
                     <div className="flex-col divide-y-2 divide-basic ">
-                      {options.map((option) => (
-                        <Listbox.Option key={option.id} value={option}>
+                      {travelingDateOptions.map((travelingDateOption) => (
+                        <Listbox.Option
+                          key={travelingDateOption.id}
+                          value={travelingDateOption}
+                        >
                           <div className="hover:bg-basic">
-                            <li className="p-2 px-6 text-end ">
+                            <li className="cursor-pointer p-2 px-6 text-end text-darkTint hover:text-primary">
                               {" "}
-                              {option.name}
+                              {travelingDateOption.name}
                             </li>
                           </div>
                         </Listbox.Option>
@@ -164,30 +196,36 @@ const Reservation = () => {
                 </Listbox.Options>
               </div>
             </Listbox>
-            <Listbox value={selectedOption} onChange={setSelectedOption}>
-              <div className="relative flex w-56 flex-col space-y-12 md:w-1/6">
-                <div className=" flex justify-between  border border-solid border-primary p-1 ">
-                  <Listbox.Button>
+            <Listbox
+              value={selectedReservationState}
+              onChange={setSelectedReservationState}
+            >
+              <div className="relative flex w-56 flex-col  md:w-1/6">
+                <Listbox.Button>
+                  <div className="  mb-8  mt-10 flex justify-between  border border-solid border-primary p-2 ">
                     <i
-                      className={`icon-expand_more_black_24dp1 text-2xl font-bold text-secondary`}
+                      className={`icon-expand_more_black_24dp1 text-2xl  text-secondary`}
                     />
-                  </Listbox.Button>
 
-                  <div>
-                    <h1 className=" text-md text-secondary">
-                      {selectedOption.name}
-                    </h1>
+                    <div>
+                      <h1 className=" text-md text-darkTint">
+                        {selectedReservationState.name}
+                      </h1>
+                    </div>
                   </div>
-                </div>
+                </Listbox.Button>
                 <Listbox.Options>
                   <ul className="absolute w-full bg-tint shadow ">
                     <div className="flex-col divide-y-2 divide-basic ">
-                      {options.map((option) => (
-                        <Listbox.Option key={option.id} value={option}>
+                      {reservationStates.map((reservationState) => (
+                        <Listbox.Option
+                          key={reservationState.id}
+                          value={reservationState}
+                        >
                           <div className="hover:bg-basic">
-                            <li className="p-2 px-6 text-end ">
+                            <li className="cursor-pointer p-2 px-6 text-end text-darkTint hover:text-primary ">
                               {" "}
-                              {option.name}
+                              {reservationState.name}
                             </li>
                           </div>
                         </Listbox.Option>
@@ -197,14 +235,14 @@ const Reservation = () => {
                 </Listbox.Options>
               </div>
             </Listbox>
-            <div className="flex flex-row justify-end space-x-4 border border-solid border-primary px-2 ">
+            <div className=" mb-8  mt-10  flex flex-row justify-end space-x-4 border border-solid border-primary p-2  ">
               <input
                 type="text"
-                className="w-full p-2 text-end md:w-2/6"
+                className="w-full px-2 text-end "
                 placeholder="بحث"
               ></input>
               <i
-                className={`icon-search_black_24dp1 py-1 text-2xl text-secondary`}
+                className={`icon-search_black_24dp1  text-2xl text-secondary`}
               />
             </div>
           </div>

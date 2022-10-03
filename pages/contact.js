@@ -6,14 +6,17 @@ const contact = () => {
   return (
     <section className="absolute flex h-full w-full flex-col">
       <NavBar />
-      <div className="flex h-full w-full flex-col md:flex-row pt-20 mt-26">
+      <div className="mt-26 flex h-full w-full flex-col pt-20 md:flex-row">
         <div className="h-full w-full bg-tint">
-          <iframe className="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12939.492122698986!2d10.585889550000001!3d35.827590799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd8b3a0237010f%3A0x4418fc1f1a3cb73f!2sPolytechnique%20Sousse!5e0!3m2!1sar!2stn!4v1663583094761!5m2!1sar!2stn"></iframe>
+          <iframe
+            className="h-full w-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12939.492122698986!2d10.585889550000001!3d35.827590799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd8b3a0237010f%3A0x4418fc1f1a3cb73f!2sPolytechnique%20Sousse!5e0!3m2!1sar!2stn!4v1663583094761!5m2!1sar!2stn"
+          ></iframe>
         </div>
-        <div className="flex h-full w-full items-center justify-end bg-basic p-4 px-12">
+        <div className="flex h-full w-full items-center justify-end bg-basic p-4 px-32">
           <div className="flex-col space-y-12">
             <div className="flex-col space-y-4">
-              <h1 className="text-end text-4xl font-bold text-secondary">
+              <h1 className="text-end text-4xl  font-bold text-secondary md:text-7xl">
                 اتصل بنا
               </h1>
               <p className="text-end text-secondary ">
