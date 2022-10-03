@@ -20,8 +20,10 @@ const ShowSearch = () => {
       </button>
       {showSearch ? 
       <div className="h-full w-full fixed inset-0 z-40 mt-2">
-        <div className="fixed inset-0 z-40 h-full w-full  md:hidden " onClick={()=>setShowSearch(false)}></div>
+        <div className=" fixed inset-0 z-40 h-full w-full  md:hidden " onClick={()=>setShowSearch(false)}></div>
+        <div className="relative w-full bg-tint h-42">
         <Search/>
+        </div>
       </div> 
       : null}
     </section>

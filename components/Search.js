@@ -74,8 +74,8 @@ const Search = () => {
         </div>
         <div className="relative h-1/2 w-full py-4 px-2 md:h-full md:w-1/4">
           <Link href="/searchResults">
-            <div className="flex h-full w-full cursor-pointer items-center justify-center space-x-2 bg-primary text-tint">
-              <h1 className="text-4xl font-bold md:hidden">بحث</h1>
+            <div className="flex h-full w-full cursor-pointer items-center justify-center space-x-2 bg-primary text-tint p-2">
+              <h1 className="text-3xl font-bold md:hidden">بحث</h1>
               <i
                 className={`icon-search_black_24dp1 cursor-pointer text-4xl`}
               />
