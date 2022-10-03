@@ -46,7 +46,9 @@ const bookingDetails = () => {
           </div>
           <div className="relative  flex  w-full flex-col space-y-12 bg-basic">
             <HotelGallery />
+            <div className="w-full bg-tint">
             <Search />
+            </div>
             <RoomCard />
             <RoomCard />
             <div className="flex h-184 w-full flex-col items-end space-y-12 bg-tint p-16 shadow-xl  ">
