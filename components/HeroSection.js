@@ -24,20 +24,22 @@ const HeroSection = () => {
             </h1>
           </div>
         </div>
-        <div className="absolute h-152 w-full  p-32 px-12 md:pt-64">
-          <div className="h-full w-full flex-col space-y-14">
-            <div className=" h-24">
-              <div className="flex-col space-y-4 md:hidden ">
-                <h1 className="  text-center text-4xl  font-black text-secondary  ">
-                  <span className="text-primary">الاختلاف</span> نخدمكم{" "}
-                </h1>
-                <h1 className=" text-center text-4xl font-black text-secondary ">
-                  باحتراف
-                </h1>
-              </div>
+        <div className="absolute h-full w-full  p-32 px-12 md:pt-64">
+          <div className="relative h-full w-full flex-col flex md:flex-row justify-center items-center space-y-14">
+            <div className="flex-col space-y-4  md:hidden ">
+              <h1 className="  text-center text-4xl  font-black text-secondary  ">
+                <span className="text-primary">الاختلاف</span> نخدمكم{" "}
+              </h1>
+              <h1 className=" text-center text-4xl font-black text-secondary ">
+                باحتراف
+              </h1>
             </div>
-            <div className="relative md:flex w-full md:flex-row md:justify-center">
-              <Search/>
+
+            <div className="relative h-96 w-full md:h-28 md:w-5/6  bg-tint shadow-xl">
+              <div className="relative h-full w-full">
+              <Search />
+              </div>
+             
             </div>
           </div>
         </div>

@@ -112,9 +112,9 @@ const Reservation = () => {
         <form className="flex h-24 w-full flex-row items-center justify-between bg-tint px-4 shadow-lg">
           <button
             type="submit"
-            className=" mb-8  mt-10 w-36 bg-secondary p-3 text-tint md:w-28"
+            className=" mb-8  mt-10 flex justify-center w-36 bg-secondary p-3 px-24 text-tint md:w-28"
           >
-            <h1 className="text-lg">بحث</h1>
+            <h1 className="text-lg ">بحث</h1>
           </button>
 
           <div className="flex w-2/3 flex-row items-center justify-center space-x-8">
