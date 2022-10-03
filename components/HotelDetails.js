@@ -47,9 +47,9 @@ const HotelDetails = ({ hotel }) => {
           <i className={`  icon-shower_black_24dp `} />
           <i className={`  icon-wifi_black_24dp1 `} />
         </div>
-        <div className="relative flex h-2/6 w-full flex-row items-center justify-around">
+        <div className="relative flex h-2/6 w-full flex-row items-center gap-8">
           <Link href="/bookingDetails">
-            <div className=" mr-24 w-1/2 cursor-pointer bg-secondary px-12 py-4 text-center font-bold text-tint">
+            <div className=" w-1/2 cursor-pointer bg-secondary px-12 py-4 text-center font-bold text-tint">
               احجز
             </div>
           </Link>

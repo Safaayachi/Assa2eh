@@ -175,7 +175,7 @@ const bookingDetails = () => {
             <Footer />
           </div>
         </div>
-        <div className="fixed z-40 flex h-32 w-full  flex-row items-center justify-around bg-tint md:hidden">
+        <div className="fixed z-40 flex h-32 w-full bottom-0  flex-row items-center justify-around bg-tint md:hidden">
           <Link href="/bookingConfirmation">
             <div className=" w-52 cursor-pointer bg-secondary  py-6 text-center text-3xl font-bold text-tint">
               احجز

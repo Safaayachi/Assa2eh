@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HotelCard = ({hotel}) => {
   return (
-    <div className="relative h-112 w-full md:w-92 shadow-lg bg-tint cursor-pointer">
+    <div className="relative h-112 w-full min-w-max md:w-92 shadow-lg bg-tint cursor-pointer">
       <div className="relative h-2/3 w-full ">
         <Image
           src={`/images/${hotel.hotelSlug}.jpg`}

@@ -61,7 +61,7 @@ const searchResults = () => {
     <div className=" flex h-full w-full flex-col">
       <NavBar />
       <ShowSearch />
-      <section className="relative flex h-full w-full flex-col items-center space-y-4 px-20 md:px-0 md:pt-20">
+      <section className="relative flex h-full w-full flex-col items-center space-y-4 px-20 md:px-0 md:pt-20 py-16">
         <div className="flex h-full w-full flex-col space-y-6 md:hidden">
           <div className="flex w-full flex-row justify-center space-x-4 pt-6  md:hidden">
             <FilterButton />

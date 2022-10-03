@@ -79,7 +79,7 @@ const Search = () => {
         <Tab.Group>
           <div className="relative flex h-full w-full flex-col space-y-10">
             <div className="relative h-24 w-full ">
-              <Tab.List className="relative flex h-24 w-full flex-row justify-end space-x-12  border-b-4 ">
+              <Tab.List className="relative flex h-24 min-w-full flex-row justify-end space-x-12 overflow-x-auto  border-b-4 ">
                 {places.map((place) => (
                   <Tab key={place.id} id={place.id}>
                     <h1 className=" h-24 border-b-4 border-transparent text-lg font-semibold text-darkTint hover:text-secondary  active:border-primary">
@@ -91,7 +91,7 @@ const Search = () => {
             </div>
             <Tab.Panels>
               <Tab.Panel>
-                <div className="relative flex h-full w-full flex-row space-x-10 overflow-x-auto md:grid md:gap-10 md:space-x-0 lg:grid-cols-3 xl:grid-cols-4 md:pb-24">
+                <div className="relative flex h-full w-full flex-row space-x-10 overflow-x-auto md:grid md:gap-10 md:space-x-0 lg:grid-cols-3 xl:grid-cols-4 md:pb-24 md:pt-0 md:px-0 p-20">
                   {hotels.map((hotel) => (
                     <div key={hotel.id} className="md:w-78 w-full">
                       <HotelCard hotel={hotel} key={hotel.id} />
