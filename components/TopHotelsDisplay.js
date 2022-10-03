@@ -79,7 +79,7 @@ const Search = () => {
         <Tab.Group>
           <div className="relative flex h-full w-full flex-col space-y-10">
             <div className="relative h-24 w-full ">
-              <Tab.List className="relative flex h-24 min-w-full flex-row justify-end space-x-12 overflow-x-auto  border-b-4 ">
+              <Tab.List className="relative flex h-24  flex-row justify-end space-x-28 md:space-x-12  border-b-4 ">
                 {places.map((place) => (
                   <Tab key={place.id} id={place.id}>
                     <h1 className=" h-24 border-b-4 border-transparent text-lg font-semibold text-darkTint hover:text-secondary  active:border-primary">
